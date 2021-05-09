@@ -48,6 +48,7 @@ jQuery(document).ready(function($) {
         });
     });
 
+// Menu
     jQuery(document).on('click', '#header .action_menu', function(event) {
         /* Act on the event */
         jQuery(this).find('.hamburger-box').toggleClass('active');
@@ -59,6 +60,44 @@ jQuery(document).ready(function($) {
         jQuery('.mobile_menu').toggleClass('open');
         jQuery('#header .hamburger-box').toggleClass('active');
         jQuery('body').toggleClass('none-scroll');
+    });
+
+// Tabs
+    jQuery(document).on('click', '.form__tabs li', function() {
+        if(!jQuery(this).hasClass('tab_active')){            
+            jQuery('.form__tabs li').removeClass('tab_active');
+            jQuery(this).addClass('tab_active');
+        }
+    });
+
+// Dropdown
+    jQuery(document).on('click', '.option_current', function() {
+        jQuery(this).parent().addClass('open');
+    });
+
+    jQuery(document).on('click', '.option_dropdown ul li', function() {
+        jQuery(this).closest('.option').find('.option_current span').text(jQuery(this).text());
+        jQuery(this).closest('.option').find('.option_current input').val(jQuery(this).text());
+        jQuery(this).closest('.option').find('.option_current').addClass('has_value');
+        jQuery(this).closest('.option').removeClass('open');
+    });
+
+
+    jQuery(document).on('click', '.dropdown_current', function() {
+        jQuery(this).parent().addClass('open');
+    });
+
+    jQuery(document).on('click', '.dropdown_options ul li', function() {
+        jQuery(this).closest('.control_dropdown').find('.dropdown_current span').text(jQuery(this).text());
+        jQuery(this).closest('.control_dropdown').find('.dropdown_current').addClass('has_value');
+        jQuery(this).closest('.control_dropdown').removeClass('open');
+    });
+
+// Handle Body
+    jQuery(document).on('click', 'body', function(e){
+        if(e && e.target && e.target.offsetParent && e.target.offsetParent.className.indexOf('option') == -1){
+            jQuery('.option').removeClass('open');
+        }
     });
 
 });

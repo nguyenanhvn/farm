@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800&subset=vietnamese,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800&subset=vietnamese,latin-ext");
 /**
  * [$color description]
  */
@@ -774,6 +775,8 @@ section.content-banner img {
  */
 section.content-search {
   background: url(../images/bg-1.jpg) center/cover;
+  position: relative;
+  z-index: 99;
 }
 @media (max-width: 992px) {
   section.content-search {
@@ -781,7 +784,7 @@ section.content-search {
   }
 }
 section.content-search .content_box .box_form {
-  margin-top: -100px;
+  top: -100px;
   position: relative;
   z-index: 9;
 }
@@ -813,6 +816,7 @@ section.content-search .content_box .box_form .form__tabs li:after {
 }
 section.content-search .content_box .box_form .form__tabs li:hover, section.content-search .content_box .box_form .form__tabs li.tab_active {
   background: #fff;
+  color: #00C2AF;
 }
 section.content-search .content_box .box_form .form__tabs li:hover:after, section.content-search .content_box .box_form .form__tabs li.tab_active:after {
   background: #fff;
@@ -824,9 +828,168 @@ section.content-search .content_box .box_form .form__filter {
   background: #fff;
   padding: 24px;
 }
+section.content-search .content_box .box_form .form__filter .filter__control {
+  grid-template-columns: 1fr 120px;
+  grid-gap: 16px;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box {
+  grid-template-columns: 254px 1fr;
+  border: 1px solid #BCC3D2;
+  border-radius: 3px;
+  height: 40px;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown {
+  position: relative;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown.open .dropdown_options {
+  opacity: 1;
+  visibility: visible;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_current {
+  position: relative;
+  line-height: 36px;
+  border-radius: 3px;
+  background: #fff;
+  height: 38px;
+  padding-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_current.has_value span {
+  color: #292C32;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_current .icon__left {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_current .icon__right {
+  position: absolute;
+  right: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_current span {
+  color: #BCC3D2;
+  padding: 0 44px;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_current input {
+  padding: 0 44px;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  color: #292C32;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_current input::-webkit-input-placeholder {
+  color: #BCC3D2;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_current input:-ms-input-placeholder {
+  color: #BCC3D2;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_current input::placeholder {
+  color: #BCC3D2;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_options {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 38px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid #BCC3D2;
+  background: #fff;
+  z-index: 99;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_options ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 240px;
+  overflow: auto;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_options ul li {
+  padding: 5px 10px;
+  color: #686868;
+  font-size: 13px;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_options ul li:hover, section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_dropdown .dropdown_options ul li.current {
+  background: #77baf259;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_input {
+  position: relative;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_input:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  background: #BCC3D2;
+  width: 1px;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_input input {
+  width: 100%;
+  line-height: 36px;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  padding: 2px 16px 0;
+  color: #292C32;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_input input::-webkit-input-placeholder {
+  color: #BCC3D2;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_input input:-ms-input-placeholder {
+  color: #BCC3D2;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_box .control_input input::placeholder {
+  color: #BCC3D2;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_button {
+  line-height: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  background: #00C2AF;
+  color: #fff;
+  padding: 0 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  pointer-events: auto;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_button:hover {
+  background: #00A394;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_button:hover svg path {
+  fill: #fff;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_button svg {
+  margin-right: 2px;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_button svg path {
+  transition: all 0.3s ease-out 0.2s;
+  -webkit-transition: all 0.3s ease-out 0.2s;
+}
+section.content-search .content_box .box_form .form__filter .filter__control .control_button svg, section.content-search .content_box .box_form .form__filter .filter__control .control_button span {
+  pointer-events: none;
+}
 section.content-search .content_box .box_form .form__filter .filter__options {
   grid-template-columns: repeat(4, minmax(100px, 1fr));
   grid-column-gap: 16px;
+  margin-top: 16px;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option.open .option_current {
+  border-radius: 3px 3px 0 0;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option.open .option_dropdown {
+  opacity: 1;
+  visibility: visible;
 }
 section.content-search .content_box .box_form .form__filter .filter__options .option .option_current {
   position: relative;
@@ -877,7 +1040,39 @@ section.content-search .content_box .box_form .form__filter .filter__options .op
   color: #BCC3D2;
 }
 section.content-search .content_box .box_form .form__filter .filter__options .option .option_dropdown {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  right: 0;
+  border: 1px solid #BCC3D2;
+  background: #fff;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 240px;
+  overflow: auto;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_dropdown ul li {
+  padding: 5px 10px;
+  color: #686868;
+  font-size: 13px;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_dropdown ul li:hover, section.content-search .content_box .box_form .form__filter .filter__options .option .option_dropdown ul li.current {
+  background: #77baf259;
+}
+section.content-search .content_box .box_slogan {
+  position: relative;
+  top: -60px;
+  font-family: 'Roboto Slab';
+}
+@media (max-width: 992px) {
+  section.content-search .content_box .box_slogan {
+    position: static;
+  }
 }
 
 /**

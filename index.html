@@ -226,31 +226,33 @@
                                 <li>Bất động sản cho thuê</li>
                             </ul>
                             <div class="form__filter">
-                                <div class="filter__control">
-                                    <div class="control_box">
+                                <div class="filter__control conn_grid">
+                                    <div class="control_box conn_grid">
                                         <div class="control_dropdown">
                                             <div class="dropdown_current">
-                                                <svg id="_24x24-home-search" data-name="24x24-home-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                <svg class="icon__left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                     <path d="M616,389h24v24H616Z" transform="translate(-616 -389)" fill="#292c32" opacity="0" />
                                                     <path id="home-search" d="M1,18.733a1,1,0,0,1-1-1V7.223a1,1,0,0,1,.386-.79l8-6.222a1,1,0,0,1,1.228,0l8,6.222a1,1,0,0,1,.386.79v10.51a1,1,0,0,1-1,1ZM2,7.71v9.023H16V7.71L9,2.266Zm9.032,6.152a4,4,0,1,1,1.414-1.414l1.5,1.5-1.414,1.414ZM7,10.417a2,2,0,1,0,2-2A2,2,0,0,0,7,10.417Z" transform="translate(3 2.268)" fill="#292c32" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" />
                                                 </svg>
                                                 <span>Tất cả nhà đất</span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                <svg class="icon__right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                     <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
                                                     <path d="M12,13.172l4.95-4.95,1.414,1.414L12,16,5.636,9.636,7.05,8.222Z" fill="#292c32" />
                                                 </svg>
                                             </div>
-                                            <ul>
-                                                <li class="active">Tất cả nhà đất</li>
-                                                <li>Đất nền dự án</li>
-                                                <li>Trang trại, khu nghỉ dưỡng</li>
-                                            </ul>
+                                            <div class="dropdown_options">                                                
+                                                <ul>
+                                                    <li class="active">Tất cả nhà đất</li>
+                                                    <li>Đất nền dự án</li>
+                                                    <li>Trang trại, khu nghỉ dưỡng</li>
+                                                </ul>
+                                            </div>
                                         </div>
                                         <div class="control_input">
                                             <input type="text" name="" placeholder="Tìm kiếm">
                                         </div>
                                     </div>
-                                    <button type="button">
+                                    <button class="control_button" type="button">
                                         <span>Tìm kiếm</span>
                                     </button>
                                 </div>
@@ -267,9 +269,9 @@
                                                 <path d="M12,13.172l4.95-4.95,1.414,1.414L12,16,5.636,9.636,7.05,8.222Z" fill="#292c32" />
                                             </svg>
                                         </div>
-                                        <div class="option_dropdown conn_anim">
+                                        <div class="option_dropdown">
                                             <ul>
-                                                <li vl="CN">Trên toàn quốc</li>
+                                                <li vl="CN">Tất cả</li>
                                                 <li vl="SG">Hồ Chí Minh</li>
                                                 <li vl="HN" class="active">Hà Nội</li>
                                                 <li vl="DDN">Đà Nẵng</li>
@@ -290,14 +292,15 @@
                                                 <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
                                                 <path d="M12,23.728,5.636,17.364a9,9,0,1,1,12.728,0Zm4.95-7.778a7,7,0,1,0-9.9,0L12,20.9l4.95-4.95ZM12,13a2,2,0,1,1,2-2A2,2,0,0,1,12,13Z" transform="translate(0 -1)" fill="#292c32" />
                                             </svg>
-                                            <span>Quận / huyện</span>
+                                            <input type="text" name="" value="" placeholder="Quận / huyện">
                                             <svg class="icon__right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                                 <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
                                                 <path d="M12,13.172l4.95-4.95,1.414,1.414L12,16,5.636,9.636,7.05,8.222Z" fill="#292c32" />
                                             </svg>
                                         </div>
-                                        <div class="option_dropdown conn_anim">
+                                        <div class="option_dropdown">
                                             <ul>
+                                                <li vl="CN">Tất cả</li>
                                                 <li vl="1">Hoàn Kiếm</li>
                                                 <li vl="2">Ba Đình</li>
                                                 <li vl="3">Đống Đa</li>
@@ -325,7 +328,7 @@
                                                 <path d="M12,13.172l4.95-4.95,1.414,1.414L12,16,5.636,9.636,7.05,8.222Z" fill="#292c32" />
                                             </svg>
                                         </div>
-                                        <div class="option_dropdown conn_anim">
+                                        <div class="option_dropdown">
                                             <ul>
                                                 <li vl="1">Tất cả</li>
                                                 <li vl="2">Dưới 500 triệu</li>
@@ -349,7 +352,7 @@
                                                 <path d="M12,13.172l4.95-4.95,1.414,1.414L12,16,5.636,9.636,7.05,8.222Z" fill="#292c32" />
                                             </svg>
                                         </div>
-                                        <div class="option_dropdown conn_anim">
+                                        <div class="option_dropdown">
                                             <ul>
                                                 <li vl="1">Tất cả</li>
                                                 <li vl="2">Dưới 30 m<sup>2</sup></li>
@@ -912,7 +915,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>c
+                    </div>
+                    <a class="box_more conn_anim conn_white">Xem tất cả (2,315)</a>
                 </div>
             </div>
         </section> <!-- /BDS -->
