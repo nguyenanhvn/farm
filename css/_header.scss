@@ -97,6 +97,8 @@
  						text-align: center;
 						background: #E3E6ED;
 						border-radius: 8px;
+						cursor: pointer;
+						pointer-events: auto;
 						&:hover{
 							background: $color;
 							svg path{
@@ -116,6 +118,9 @@
 						}
 						svg path{
 							@include transition;
+						}
+						svg, span{
+							pointer-events: none;
 						}
  					}
  				}

@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -59,7 +64,7 @@
         </div>
         <div class="header-bottom">
             <div class="container">
-                <div class="box conn_grid">                    
+                <div class="box conn_grid">
                     <div class="bottom_logo">
                         <a href="#" title="">
                             <img src="images/logo.svg" alt="Logo">
@@ -281,109 +286,397 @@
                             <div class="item_galleries">
                                 <div class="item_type type_vip">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-                                        <g id="_24x24-crown" data-name="24x24-crown" transform="translate(0.5 0.5)">
+                                        <g transform="translate(0.5 0.5)">
                                             <path d="M0,0H16V16H0Z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0" />
-                                            <path id="crown" d="M3.2,12.2h9.6v1.2H3.2ZM2,3.8,5,5.6,8,2l3,3.6,3-1.8L12.8,11H3.2Z" fill="#fff" />
+                                            <path d="M3.2,12.2h9.6v1.2H3.2ZM2,3.8,5,5.6,8,2l3,3.6,3-1.8L12.8,11H3.2Z" fill="#fff" />
                                         </g>
                                     </svg>
                                     <span>VIP</span>
                                 </div>
-                                <div class="swiper-container swiper-container-initialized swiper-container-horizontal" id="swiper1">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide swiper-slide-active" style="background-image: url(images/Rectangle -1.png)">
-                                            <img src="images/Rectangle -1.png" alt="Image">
-                                        </div>
-                                        <div class="swiper-slide" style="background-image: url(images/Rectangle -1.png)">
-                                            <img src="images/Rectangle -1.png" alt="Image">
-                                        </div>
-                                        <div class="swiper-slide" style="background-image: url(images/Rectangle -1.png)">
-                                            <img src="images/Rectangle -1.png" alt="Image">
-                                        </div>
+                                <div class="item_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/Rectangle-7.png" alt="Image">
                                     </div>
-                                    <div class="swiper-dots"></div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-1.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-2.png" alt="Image">
+                                    </div>
                                 </div>
                             </div>
                             <div class="item_caption">
                                 <div class="item_name">
-                                    <a href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                    <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
                                 </div>
-                                <div class="item_location">
-                                    <svg id="_24x24-pin" data-name="24x24-pin" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <div class="item_location conn_grid conn_text conn_up">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
                                         <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
                                     </svg>
                                     <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
                                 </div>
+                                <div class="item_line"></div>
                                 <div class="item_info">
-                                    <ul>
-                                        <li>
+                                    <ul class="conn_ul">
+                                        <li class="conn_grid">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                                 <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
-                                                <path id="re-type-farm" d="M14.333,3A.667.667,0,0,1,15,3.667V14.333a.667.667,0,0,1-.667.667H3.667A.667.667,0,0,1,3,14.333V3.667A.667.667,0,0,1,3.667,3ZM8.459,9.772,4.333,10.5v3.167H9.145L8.459,9.772Zm5.207-5.439H8.854L10.5,13.667h3.167Zm-6.167,0H4.333V9.145l3.895-.687Z" transform="translate(-1 -1)" fill="#292c32" />
+                                                <path d="M14.333,3A.667.667,0,0,1,15,3.667V14.333a.667.667,0,0,1-.667.667H3.667A.667.667,0,0,1,3,14.333V3.667A.667.667,0,0,1,3.667,3ZM8.459,9.772,4.333,10.5v3.167H9.145L8.459,9.772Zm5.207-5.439H8.854L10.5,13.667h3.167Zm-6.167,0H4.333V9.145l3.895-.687Z" transform="translate(-1 -1)" fill="#292c32" />
                                             </svg>
                                             <span>Trang trại, khu nghỉ dưỡng</span>
                                         </li>
-                                        <li>
+                                        <li class="conn_grid">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                                 <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
-                                                <path id="area" d="M6,6v5.333h5.333V6ZM4.667,4.667h8v8h-8ZM4.667,2H6V4H4.667Zm0,11.333H6v2H4.667ZM2,4.667H4V6H2Zm0,6.667H4v1.333H2ZM13.333,4.667h2V6h-2Zm0,6.667h2v1.333h-2ZM11.333,2h1.333V4H11.333Zm0,11.333h1.333v2H11.333Z" transform="translate(-0.667 -0.667)" fill="#292c32" />
+                                                <path d="M6,6v5.333h5.333V6ZM4.667,4.667h8v8h-8ZM4.667,2H6V4H4.667Zm0,11.333H6v2H4.667ZM2,4.667H4V6H2Zm0,6.667H4v1.333H2ZM13.333,4.667h2V6h-2Zm0,6.667h2v1.333h-2ZM11.333,2h1.333V4H11.333Zm0,11.333h1.333v2H11.333Z" transform="translate(-0.667 -0.667)" fill="#292c32" />
                                             </svg>
                                             <span>3000m2</span>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="item_price">
-                                    <span>Giá</span> <strong>Thỏa thuận</strong>
+                                <div class="item_line"></div>
+                                <div class="item_bottom conn_flex">
+                                    <div class="item_price conn_text">
+                                        <span>Giá</span> <strong>Thỏa thuận</strong>
+                                    </div>
+                                    <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                        <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                            <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div class="item_like">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_galleries">
+                                <div class="item_type type_vip">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                        <g transform="translate(0.5 0.5)">
+                                            <path d="M0,0H16V16H0Z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0" />
+                                            <path d="M3.2,12.2h9.6v1.2H3.2ZM2,3.8,5,5.6,8,2l3,3.6,3-1.8L12.8,11H3.2Z" fill="#fff" />
+                                        </g>
+                                    </svg>
+                                    <span>VIP</span>
+                                </div>
+                                <div class="item_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/Rectangle-1.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-2.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-3.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_caption">
+                                <div class="item_name">
+                                    <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                </div>
+                                <div class="item_location conn_grid conn_text conn_up">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                        <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                    </svg>
+                                    <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                </div>
+                                <div class="item_line"></div>
+                                <div class="item_info">
+                                    <ul class="conn_ul">
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M14.333,3A.667.667,0,0,1,15,3.667V14.333a.667.667,0,0,1-.667.667H3.667A.667.667,0,0,1,3,14.333V3.667A.667.667,0,0,1,3.667,3ZM8.459,9.772,4.333,10.5v3.167H9.145L8.459,9.772Zm5.207-5.439H8.854L10.5,13.667h3.167Zm-6.167,0H4.333V9.145l3.895-.687Z" transform="translate(-1 -1)" fill="#292c32" />
+                                            </svg>
+                                            <span>Trang trại, khu nghỉ dưỡng</span>
+                                        </li>
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M6,6v5.333h5.333V6ZM4.667,4.667h8v8h-8ZM4.667,2H6V4H4.667Zm0,11.333H6v2H4.667ZM2,4.667H4V6H2Zm0,6.667H4v1.333H2ZM13.333,4.667h2V6h-2Zm0,6.667h2v1.333h-2ZM11.333,2h1.333V4H11.333Zm0,11.333h1.333v2H11.333Z" transform="translate(-0.667 -0.667)" fill="#292c32" />
+                                            </svg>
+                                            <span>3000m2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item_line"></div>
+                                <div class="item_bottom conn_flex">
+                                    <div class="item_price conn_text">
+                                        <span>Giá</span> <strong>Thỏa thuận</strong>
+                                    </div>
+                                    <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                        <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                            <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_galleries">
+                                <div class="item_type type_vip">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                        <g transform="translate(0.5 0.5)">
+                                            <path d="M0,0H16V16H0Z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0" />
+                                            <path d="M3.2,12.2h9.6v1.2H3.2ZM2,3.8,5,5.6,8,2l3,3.6,3-1.8L12.8,11H3.2Z" fill="#fff" />
+                                        </g>
+                                    </svg>
+                                    <span>VIP</span>
+                                </div>
+                                <div class="item_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/Rectangle-3.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-3.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-1.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_caption">
+                                <div class="item_name">
+                                    <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                </div>
+                                <div class="item_location conn_grid conn_text conn_up">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                        <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                    </svg>
+                                    <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                </div>
+                                <div class="item_line"></div>
+                                <div class="item_info">
+                                    <ul class="conn_ul">
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M14.333,3A.667.667,0,0,1,15,3.667V14.333a.667.667,0,0,1-.667.667H3.667A.667.667,0,0,1,3,14.333V3.667A.667.667,0,0,1,3.667,3ZM8.459,9.772,4.333,10.5v3.167H9.145L8.459,9.772Zm5.207-5.439H8.854L10.5,13.667h3.167Zm-6.167,0H4.333V9.145l3.895-.687Z" transform="translate(-1 -1)" fill="#292c32" />
+                                            </svg>
+                                            <span>Trang trại, khu nghỉ dưỡng</span>
+                                        </li>
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M6,6v5.333h5.333V6ZM4.667,4.667h8v8h-8ZM4.667,2H6V4H4.667Zm0,11.333H6v2H4.667ZM2,4.667H4V6H2Zm0,6.667H4v1.333H2ZM13.333,4.667h2V6h-2Zm0,6.667h2v1.333h-2ZM11.333,2h1.333V4H11.333Zm0,11.333h1.333v2H11.333Z" transform="translate(-0.667 -0.667)" fill="#292c32" />
+                                            </svg>
+                                            <span>3000m2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item_line"></div>
+                                <div class="item_bottom conn_flex">
+                                    <div class="item_price conn_text">
+                                        <span>Giá</span> <strong>Thỏa thuận</strong>
+                                    </div>
+                                    <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                        <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                            <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_galleries">
+                                <div class="item_type type_vip">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                        <g transform="translate(0.5 0.5)">
+                                            <path d="M0,0H16V16H0Z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0" />
+                                            <path d="M3.2,12.2h9.6v1.2H3.2ZM2,3.8,5,5.6,8,2l3,3.6,3-1.8L12.8,11H3.2Z" fill="#fff" />
+                                        </g>
+                                    </svg>
+                                    <span>VIP</span>
+                                </div>
+                                <div class="item_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/Rectangle-5.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-1.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-2.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_caption">
+                                <div class="item_name">
+                                    <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                </div>
+                                <div class="item_location conn_grid conn_text conn_up">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                        <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                    </svg>
+                                    <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                </div>
+                                <div class="item_line"></div>
+                                <div class="item_info">
+                                    <ul class="conn_ul">
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M14.333,3A.667.667,0,0,1,15,3.667V14.333a.667.667,0,0,1-.667.667H3.667A.667.667,0,0,1,3,14.333V3.667A.667.667,0,0,1,3.667,3ZM8.459,9.772,4.333,10.5v3.167H9.145L8.459,9.772Zm5.207-5.439H8.854L10.5,13.667h3.167Zm-6.167,0H4.333V9.145l3.895-.687Z" transform="translate(-1 -1)" fill="#292c32" />
+                                            </svg>
+                                            <span>Trang trại, khu nghỉ dưỡng</span>
+                                        </li>
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M6,6v5.333h5.333V6ZM4.667,4.667h8v8h-8ZM4.667,2H6V4H4.667Zm0,11.333H6v2H4.667ZM2,4.667H4V6H2Zm0,6.667H4v1.333H2ZM13.333,4.667h2V6h-2Zm0,6.667h2v1.333h-2ZM11.333,2h1.333V4H11.333Zm0,11.333h1.333v2H11.333Z" transform="translate(-0.667 -0.667)" fill="#292c32" />
+                                            </svg>
+                                            <span>3000m2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item_line"></div>
+                                <div class="item_bottom conn_flex">
+                                    <div class="item_price conn_text">
+                                        <span>Giá</span> <strong>Thỏa thuận</strong>
+                                    </div>
+                                    <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                        <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                            <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="item_galleries">
                                 <div class="item_type type_hot">
-                                    <svg id="_24x24-fire" data-name="24x24-fire" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                         <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
                                         <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
                                     </svg>
                                     <span>HOT</span>
                                 </div>
-                                <div class="swiper-container swiper-container-initialized swiper-container-horizontal" id="swiper1">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide swiper-slide-active" style="background-image: url(images/banner.png)">
-                                            <img src="images/banner.png" alt="Image">
-                                        </div>
-                                        <div class="swiper-slide" style="background-image: url(images/banner.png)">
-                                            <img src="images/banner.png" alt="Image">
-                                        </div>
-                                        <div class="swiper-slide" style="background-image: url(images/banner.png)">
-                                            <img src="images/banner.png" alt="Image">
-                                        </div>
+                                <div class="item_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/Rectangle-8.png" alt="Image">
                                     </div>
-                                    <div class="swiper-dots"></div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-2.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-3.png" alt="Image">
+                                    </div>
                                 </div>
                             </div>
                             <div class="item_caption">
                                 <div class="item_name">
-                                    <a href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                    <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
                                 </div>
-                                <div class="item_location">
+                                <div class="item_location conn_grid conn_text conn_up">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                        <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                    </svg>
                                     <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
                                 </div>
+                                <div class="item_line"></div>
                                 <div class="item_info">
-                                    <ul>
-                                        <li>
+                                    <ul class="conn_ul">
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M14.333,3A.667.667,0,0,1,15,3.667V14.333a.667.667,0,0,1-.667.667H3.667A.667.667,0,0,1,3,14.333V3.667A.667.667,0,0,1,3.667,3ZM8.459,9.772,4.333,10.5v3.167H9.145L8.459,9.772Zm5.207-5.439H8.854L10.5,13.667h3.167Zm-6.167,0H4.333V9.145l3.895-.687Z" transform="translate(-1 -1)" fill="#292c32" />
+                                            </svg>
                                             <span>Trang trại, khu nghỉ dưỡng</span>
                                         </li>
-                                        <li>
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M6,6v5.333h5.333V6ZM4.667,4.667h8v8h-8ZM4.667,2H6V4H4.667Zm0,11.333H6v2H4.667ZM2,4.667H4V6H2Zm0,6.667H4v1.333H2ZM13.333,4.667h2V6h-2Zm0,6.667h2v1.333h-2ZM11.333,2h1.333V4H11.333Zm0,11.333h1.333v2H11.333Z" transform="translate(-0.667 -0.667)" fill="#292c32" />
+                                            </svg>
                                             <span>3000m2</span>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="item_price">
-                                    <span>Giá</span> <strong>Thỏa thuận</strong>
+                                <div class="item_line"></div>
+                                <div class="item_bottom conn_flex">
+                                    <div class="item_price conn_text">
+                                        <span>Giá</span> <strong>Thỏa thuận</strong>
+                                    </div>
+                                    <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                        <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                            <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div class="item_like">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_galleries">
+                                <div class="item_type type_hot">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                        <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                    </svg>
+                                    <span>HOT</span>
+                                </div>
+                                <div class="item_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/Rectangle-2.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-3.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-1.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_caption">
+                                <div class="item_name">
+                                    <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                </div>
+                                <div class="item_location conn_grid conn_text conn_up">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                        <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                    </svg>
+                                    <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                </div>
+                                <div class="item_line"></div>
+                                <div class="item_info">
+                                    <ul class="conn_ul">
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M14.333,3A.667.667,0,0,1,15,3.667V14.333a.667.667,0,0,1-.667.667H3.667A.667.667,0,0,1,3,14.333V3.667A.667.667,0,0,1,3.667,3ZM8.459,9.772,4.333,10.5v3.167H9.145L8.459,9.772Zm5.207-5.439H8.854L10.5,13.667h3.167Zm-6.167,0H4.333V9.145l3.895-.687Z" transform="translate(-1 -1)" fill="#292c32" />
+                                            </svg>
+                                            <span>Trang trại, khu nghỉ dưỡng</span>
+                                        </li>
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M6,6v5.333h5.333V6ZM4.667,4.667h8v8h-8ZM4.667,2H6V4H4.667Zm0,11.333H6v2H4.667ZM2,4.667H4V6H2Zm0,6.667H4v1.333H2ZM13.333,4.667h2V6h-2Zm0,6.667h2v1.333h-2ZM11.333,2h1.333V4H11.333Zm0,11.333h1.333v2H11.333Z" transform="translate(-0.667 -0.667)" fill="#292c32" />
+                                            </svg>
+                                            <span>3000m2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item_line"></div>
+                                <div class="item_bottom conn_flex">
+                                    <div class="item_price conn_text">
+                                        <span>Giá</span> <strong>Thỏa thuận</strong>
+                                    </div>
+                                    <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                        <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                            <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -393,52 +686,135 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
                                         <g transform="translate(0.5 0.5)">
                                             <path d="M0,0H16V16H0Z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0" />
-                                            <path id="star" d="M4796.631,647.449l2.468,3.612,4.2,1.232-2.672,3.464.125,4.373-4.12-1.471-4.12,1.471.125-4.373-2.672-3.464,4.2-1.232Z" transform="translate(-4788.63 -646.116)" fill="#fff" />
+                                            <path d="M4796.631,647.449l2.468,3.612,4.2,1.232-2.672,3.464.125,4.373-4.12-1.471-4.12,1.471.125-4.373-2.672-3.464,4.2-1.232Z" transform="translate(-4788.63 -646.116)" fill="#fff" />
                                         </g>
                                     </svg>
                                     <span>Nổi bật</span>
                                 </div>
-                                <div class="swiper-container swiper-container-initialized swiper-container-horizontal" id="swiper1">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide swiper-slide-active" style="background-image: url(images/banner.png)">
-                                            <img src="images/banner.png" alt="Image">
-                                        </div>
-                                        <div class="swiper-slide" style="background-image: url(images/banner.png)">
-                                            <img src="images/banner.png" alt="Image">
-                                        </div>
-                                        <div class="swiper-slide" style="background-image: url(images/banner.png)">
-                                            <img src="images/banner.png" alt="Image">
-                                        </div>
+                                <div class="item_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/Rectangle-4.png" alt="Image">
                                     </div>
-                                    <div class="swiper-dots"></div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-2.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-3.png" alt="Image">
+                                    </div>
                                 </div>
                             </div>
                             <div class="item_caption">
                                 <div class="item_name">
-                                    <a href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                    <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
                                 </div>
-                                <div class="item_location">
+                                <div class="item_location conn_grid conn_text conn_up">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                        <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                    </svg>
                                     <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
                                 </div>
+                                <div class="item_line"></div>
                                 <div class="item_info">
-                                    <ul>
-                                        <li>
+                                    <ul class="conn_ul">
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M14.333,3A.667.667,0,0,1,15,3.667V14.333a.667.667,0,0,1-.667.667H3.667A.667.667,0,0,1,3,14.333V3.667A.667.667,0,0,1,3.667,3ZM8.459,9.772,4.333,10.5v3.167H9.145L8.459,9.772Zm5.207-5.439H8.854L10.5,13.667h3.167Zm-6.167,0H4.333V9.145l3.895-.687Z" transform="translate(-1 -1)" fill="#292c32" />
+                                            </svg>
                                             <span>Trang trại, khu nghỉ dưỡng</span>
                                         </li>
-                                        <li>
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M6,6v5.333h5.333V6ZM4.667,4.667h8v8h-8ZM4.667,2H6V4H4.667Zm0,11.333H6v2H4.667ZM2,4.667H4V6H2Zm0,6.667H4v1.333H2ZM13.333,4.667h2V6h-2Zm0,6.667h2v1.333h-2ZM11.333,2h1.333V4H11.333Zm0,11.333h1.333v2H11.333Z" transform="translate(-0.667 -0.667)" fill="#292c32" />
+                                            </svg>
                                             <span>3000m2</span>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="item_price">
-                                    <span>Giá</span> <strong>Thỏa thuận</strong>
-                                </div>
-                                <div class="item_like">
+                                <div class="item_line"></div>
+                                <div class="item_bottom conn_flex">
+                                    <div class="item_price conn_text">
+                                        <span>Giá</span> <strong>Thỏa thuận</strong>
+                                    </div>
+                                    <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                        <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                            <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <a class="box_more">Xem tất cả (2,315)</a>
+                        <div class="item">
+                            <div class="item_galleries">
+                                <div class="item_type type_other">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                        <g transform="translate(0.5 0.5)">
+                                            <path d="M0,0H16V16H0Z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0" />
+                                            <path d="M4796.631,647.449l2.468,3.612,4.2,1.232-2.672,3.464.125,4.373-4.12-1.471-4.12,1.471.125-4.373-2.672-3.464,4.2-1.232Z" transform="translate(-4788.63 -646.116)" fill="#fff" />
+                                        </g>
+                                    </svg>
+                                    <span>Nổi bật</span>
+                                </div>
+                                <div class="item_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/Rectangle-6.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-2.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/Rectangle-3.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_caption">
+                                <div class="item_name">
+                                    <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                </div>
+                                <div class="item_location conn_grid conn_text conn_up">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                        <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                    </svg>
+                                    <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                </div>
+                                <div class="item_line"></div>
+                                <div class="item_info">
+                                    <ul class="conn_ul">
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M14.333,3A.667.667,0,0,1,15,3.667V14.333a.667.667,0,0,1-.667.667H3.667A.667.667,0,0,1,3,14.333V3.667A.667.667,0,0,1,3.667,3ZM8.459,9.772,4.333,10.5v3.167H9.145L8.459,9.772Zm5.207-5.439H8.854L10.5,13.667h3.167Zm-6.167,0H4.333V9.145l3.895-.687Z" transform="translate(-1 -1)" fill="#292c32" />
+                                            </svg>
+                                            <span>Trang trại, khu nghỉ dưỡng</span>
+                                        </li>
+                                        <li class="conn_grid">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                <path d="M6,6v5.333h5.333V6ZM4.667,4.667h8v8h-8ZM4.667,2H6V4H4.667Zm0,11.333H6v2H4.667ZM2,4.667H4V6H2Zm0,6.667H4v1.333H2ZM13.333,4.667h2V6h-2Zm0,6.667h2v1.333h-2ZM11.333,2h1.333V4H11.333Zm0,11.333h1.333v2H11.333Z" transform="translate(-0.667 -0.667)" fill="#292c32" />
+                                            </svg>
+                                            <span>3000m2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item_line"></div>
+                                <div class="item_bottom conn_flex">
+                                    <div class="item_price conn_text">
+                                        <span>Giá</span> <strong>Thỏa thuận</strong>
+                                    </div>
+                                    <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                        <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                            <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>c
                 </div>
             </div>
         </section> <!-- /BDS -->
@@ -446,12 +822,871 @@
         <section class="content-cities">
             <div class="container">
                 <div class="content_box">
-                    <h2 class="box_heading conn_heading">Bất động sản được quan tâm</h2>
-                    <div class="box_items">
+                    <h2 class="box_heading conn_heading">Khu vực được tìm kiếm Nhiều nhất</h2>
+                    <div class="box_items conn_grid">
+                        <a class="item conn_white">
+                            <div class="item_galleries">
+                                <div class="cities_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/img-1.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/img-3.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_cate">Thành phố</div>
+                            <div class="item_caption">
+                                <div class="item_city conn_sheading conn_white">Hà Nội</div>
+                                <div class="item_count">127 Tin đăng</div>
+                            </div>
+                        </a>
+                        <a class="item conn_white">
+                            <div class="item_galleries">
+                                <div class="cities_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/img-2.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/img-4.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_cate">Thành phố</div>
+                            <div class="item_caption">
+                                <div class="item_city conn_sheading conn_white">Hạ Long</div>
+                                <div class="item_count">5,571 Tin đăng</div>
+                            </div>
+                        </a>
+                        <a class="item conn_white">
+                            <div class="item_galleries">
+                                <div class="cities_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/img-3.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/img-2.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_cate">Huyện</div>
+                            <div class="item_caption">
+                                <div class="item_city conn_sheading conn_white">Đông Anh</div>
+                                <div class="item_count">71 Tin đăng</div>
+                            </div>
+                        </a>
+                        <a class="item conn_white">
+                            <div class="item_galleries">
+                                <div class="cities_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/img-4.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/img-1.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_cate">Quận</div>
+                            <div class="item_caption">
+                                <div class="item_city conn_sheading conn_white">Nam Từ Liêm</div>
+                                <div class="item_count">529 Tin đăng</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box_items__2 conn_grid">
+                        <div class="item conn_white">
+                            <div class="item_galleries">
+                                <div class="cities_slider owl-carousel">
+                                    <div class="child">
+                                        <img src="images/img-5.png" alt="Image">
+                                    </div>
+                                    <div class="child">
+                                        <img src="images/img-5.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item_cate">Thành phố</div>
+                            <div class="item_caption">
+                                <div class="item_city conn_sheading conn_white">Bắc Giang</div>
+                                <div class="item_count">2,574 Tin đăng</div>
+                            </div>
+                        </div>
+                        <div class="item item_other conn_grid">
+                            <div class="item_img">
+                                <img src="images/img-6.png" alt="Image">
+                            </div>
+                            <div class="item_info conn_flex__cleft">
+                                <div class="item_center">
+                                    <div class="conn_sheading text_blue">Đăng tin thả ga</div>
+                                    <div class="conn_sheading text_dark">Nhận ngay quà khủng</div>
+                                    <div class="text">
+                                        Tặng combo đăng tin VIP áp dụng từ 30/8 - 31/12/2021
+                                    </div>
+                                    <a class="item_button conn_anim">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path d="M0,0H24V24H0Z" fill="#fff" opacity="0"></path>
+                                            <path d="M13.828,1.686l8.486,8.486L20.9,11.586l-.707-.707L15.95,15.121l-.707,3.536-1.415,1.414L9.586,15.828l-4.95,4.95L3.222,19.364l4.95-4.95L3.929,10.172,5.343,8.757,8.88,8.05l4.242-4.242L12.415,3.1l1.414-1.415Zm.708,3.536L9.865,9.892l-2.822.565,6.5,6.5.564-2.822,4.671-4.67L14.536,5.222Z" fill="#fff"></path>
+                                        </svg>
+                                        <span>Đăng tin ngay</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_tags">
+                        <div class="conn_sheading">Từ khóa hot</div>
+                        <ul class="conn_ul tags conn_flex">
+                            <li>
+                                <a href="#" title="">
+                                    <span>Bất động sản Bắc Giang</span>
+                                    <span>33</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Đông Anh</span>
+                                    <span>57</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Trang trại</span>
+                                    <span>7</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Đất nền Cam Lâm</span>
+                                    <span>1,234</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Đất nền Bình Chánh</span>
+                                    <span>769</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Bán đất Bình Tân</span>
+                                    <span>213</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Bán đất Củ Chi</span>
+                                    <span>842</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Bán đất</span>
+                                    <span>124,254</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Chính chủ bán đất</span>
+                                    <span>5,965</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Chuyển nhượng</span>
+                                    <span>12</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Phú Hữu</span>
+                                    <span>887</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Trang trại Ba Vì</span>
+                                    <span>12</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Đất dự án Phú Quốc</span>
+                                    <span>512</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="">
+                                    <span>Mặt đường Quốc lộ</span>
+                                    <span>213</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section> <!-- /Cities -->
+        <!-- Related -->
+        <section class="content-related">
+            <div class="container">
+                <div class="content_box">
+                    <h2 class="box_heading conn_heading">Bất động sản mới đăng</h2>
+                    <div class="box_tabs conn_flex">
+                        <label class="ite conn_anim ite_active">
+                            <input type="radio" name="tabs" checked="checked" class="tabInput" value="0">
+                            Trang trại nông nghiệp
+                        </label>
+                        <label class="ite conn_anim">
+                            <input type="radio" name="tabs" class="tabInput" value="1">
+                            Nghỉ dưỡng
+                        </label>
+                    </div>
+                    <div class="box_contents">
+                        <div class="ite ite_active" id="tab0">                            
+                            <div class="box_items conn_grid">
+                                <div class="item conn_grid">
+                                    <div class="item_galleries">
+                                        <div class="item_type type_hot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                                <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                            </svg>
+                                            <span>HOT</span>
+                                        </div>
+                                        <div class="item_slider owl-carousel">
+                                            <div class="child">
+                                                <img src="images/Rectangle-6.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_name">
+                                            <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                        </div>
+                                        <div class="item_location conn_grid conn_text conn_up">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                            </svg>
+                                            <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                        </div>
+                                        <div class="item_line"></div>
+                                        <div class="item_bottom conn_flex">
+                                            <div class="item_price conn_text">
+                                                <span>Giá</span> <strong>Thỏa thuận</strong>
+                                            </div>
+                                            <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                    <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item conn_grid">
+                                    <div class="item_galleries">
+                                        <div class="item_type type_hot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                                <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                            </svg>
+                                            <span>HOT</span>
+                                        </div>
+                                        <div class="item_slider owl-carousel">
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_name">
+                                            <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                        </div>
+                                        <div class="item_location conn_grid conn_text conn_up">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                            </svg>
+                                            <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                        </div>
+                                        <div class="item_line"></div>
+                                        <div class="item_bottom conn_flex">
+                                            <div class="item_price conn_text">
+                                                <span>Giá</span> <strong>Thỏa thuận</strong>
+                                            </div>
+                                            <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                    <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item conn_grid">
+                                    <div class="item_galleries">
+                                        <div class="item_type type_hot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                                <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                            </svg>
+                                            <span>HOT</span>
+                                        </div>
+                                        <div class="item_slider owl-carousel">
+                                            <div class="child">
+                                                <img src="images/Rectangle-3.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_name">
+                                            <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                        </div>
+                                        <div class="item_location conn_grid conn_text conn_up">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                            </svg>
+                                            <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                        </div>
+                                        <div class="item_line"></div>
+                                        <div class="item_bottom conn_flex">
+                                            <div class="item_price conn_text">
+                                                <span>Giá</span> <strong>Thỏa thuận</strong>
+                                            </div>
+                                            <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                    <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item conn_grid">
+                                    <div class="item_galleries">
+                                        <div class="item_type type_hot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                                <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                            </svg>
+                                            <span>HOT</span>
+                                        </div>
+                                        <div class="item_slider owl-carousel">
+                                            <div class="child">
+                                                <img src="images/Rectangle-5.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_name">
+                                            <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                        </div>
+                                        <div class="item_location conn_grid conn_text conn_up">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                            </svg>
+                                            <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                        </div>
+                                        <div class="item_line"></div>
+                                        <div class="item_bottom conn_flex">
+                                            <div class="item_price conn_text">
+                                                <span>Giá</span> <strong>Thỏa thuận</strong>
+                                            </div>
+                                            <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                    <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item conn_grid">
+                                    <div class="item_galleries">
+                                        <div class="item_type type_hot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                                <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                            </svg>
+                                            <span>HOT</span>
+                                        </div>
+                                        <div class="item_slider owl-carousel">
+                                            <div class="child">
+                                                <img src="images/Rectangle-8.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_name">
+                                            <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                        </div>
+                                        <div class="item_location conn_grid conn_text conn_up">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                            </svg>
+                                            <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                        </div>
+                                        <div class="item_line"></div>
+                                        <div class="item_bottom conn_flex">
+                                            <div class="item_price conn_text">
+                                                <span>Giá</span> <strong>Thỏa thuận</strong>
+                                            </div>
+                                            <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                    <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item conn_grid">
+                                    <div class="item_galleries">
+                                        <div class="item_type type_hot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                                <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                            </svg>
+                                            <span>HOT</span>
+                                        </div>
+                                        <div class="item_slider owl-carousel">
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_name">
+                                            <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                        </div>
+                                        <div class="item_location conn_grid conn_text conn_up">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                            </svg>
+                                            <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                        </div>
+                                        <div class="item_line"></div>
+                                        <div class="item_bottom conn_flex">
+                                            <div class="item_price conn_text">
+                                                <span>Giá</span> <strong>Thỏa thuận</strong>
+                                            </div>
+                                            <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                    <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="box_more conn_anim conn_white">Xem tất cả (2,315)</a>
+                        </div>
+                        <div class="ite" id="tab1">                            
+                            <div class="box_items conn_grid">
+                                <div class="item conn_grid">
+                                    <div class="item_galleries">
+                                        <div class="item_type type_hot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                                <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                            </svg>
+                                            <span>HOT</span>
+                                        </div>
+                                        <div class="item_slider owl-carousel">
+                                            <div class="child">
+                                                <img src="images/Rectangle-3.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_name">
+                                            <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                        </div>
+                                        <div class="item_location conn_grid conn_text conn_up">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                            </svg>
+                                            <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                        </div>
+                                        <div class="item_line"></div>
+                                        <div class="item_bottom conn_flex">
+                                            <div class="item_price conn_text">
+                                                <span>Giá</span> <strong>Thỏa thuận</strong>
+                                            </div>
+                                            <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                    <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item conn_grid">
+                                    <div class="item_galleries">
+                                        <div class="item_type type_hot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                                <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                            </svg>
+                                            <span>HOT</span>
+                                        </div>
+                                        <div class="item_slider owl-carousel">
+                                            <div class="child">
+                                                <img src="images/Rectangle-5.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_name">
+                                            <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                        </div>
+                                        <div class="item_location conn_grid conn_text conn_up">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                            </svg>
+                                            <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                        </div>
+                                        <div class="item_line"></div>
+                                        <div class="item_bottom conn_flex">
+                                            <div class="item_price conn_text">
+                                                <span>Giá</span> <strong>Thỏa thuận</strong>
+                                            </div>
+                                            <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                    <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item conn_grid">
+                                    <div class="item_galleries">
+                                        <div class="item_type type_hot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                                <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                            </svg>
+                                            <span>HOT</span>
+                                        </div>
+                                        <div class="item_slider owl-carousel">
+                                            <div class="child">
+                                                <img src="images/Rectangle-8.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_name">
+                                            <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                        </div>
+                                        <div class="item_location conn_grid conn_text conn_up">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                            </svg>
+                                            <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                        </div>
+                                        <div class="item_line"></div>
+                                        <div class="item_bottom conn_flex">
+                                            <div class="item_price conn_text">
+                                                <span>Giá</span> <strong>Thỏa thuận</strong>
+                                            </div>
+                                            <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                    <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item conn_grid">
+                                    <div class="item_galleries">
+                                        <div class="item_type type_hot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                                <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                            </svg>
+                                            <span>HOT</span>
+                                        </div>
+                                        <div class="item_slider owl-carousel">
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_name">
+                                            <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                        </div>
+                                        <div class="item_location conn_grid conn_text conn_up">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                            </svg>
+                                            <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                        </div>
+                                        <div class="item_line"></div>
+                                        <div class="item_bottom conn_flex">
+                                            <div class="item_price conn_text">
+                                                <span>Giá</span> <strong>Thỏa thuận</strong>
+                                            </div>
+                                            <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                    <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item conn_grid">
+                                    <div class="item_galleries">
+                                        <div class="item_type type_hot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                                <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                            </svg>
+                                            <span>HOT</span>
+                                        </div>
+                                        <div class="item_slider owl-carousel">
+                                            <div class="child">
+                                                <img src="images/Rectangle-6.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_name">
+                                            <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                        </div>
+                                        <div class="item_location conn_grid conn_text conn_up">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                            </svg>
+                                            <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                        </div>
+                                        <div class="item_line"></div>
+                                        <div class="item_bottom conn_flex">
+                                            <div class="item_price conn_text">
+                                                <span>Giá</span> <strong>Thỏa thuận</strong>
+                                            </div>
+                                            <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                    <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item conn_grid">
+                                    <div class="item_galleries">
+                                        <div class="item_type type_hot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#fff" opacity="0" />
+                                                <path id="fire" d="M9.5,14.833A5.01,5.01,0,0,1,4.853,11.9a4.427,4.427,0,0,1,1.222-5.1C6.97,6.011,9.167,4.6,8.834,1.5c4,2.481,6,4.961,2,8.682.667,0,1.667,0,3.333-1.532a4.389,4.389,0,0,1,.333,1.532,4.835,4.835,0,0,1-5,4.651Z" transform="translate(-1.5 -0.833)" fill="#fff" />
+                                            </svg>
+                                            <span>HOT</span>
+                                        </div>
+                                        <div class="item_slider owl-carousel">
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-1.png" alt="Image">
+                                            </div>
+                                            <div class="child">
+                                                <img src="images/Rectangle-2.png" alt="Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_name">
+                                            <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                        </div>
+                                        <div class="item_location conn_grid conn_text conn_up">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                            </svg>
+                                            <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                        </div>
+                                        <div class="item_line"></div>
+                                        <div class="item_bottom conn_flex">
+                                            <div class="item_price conn_text">
+                                                <span>Giá</span> <strong>Thỏa thuận</strong>
+                                            </div>
+                                            <div class="item_like conn_relative tooltipMarking conn_anim" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                    <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="box_more conn_anim conn_white">Xem tất cả (2,315)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /Related -->
+        <!-- News -->
+        <section class="content-news">
+            <div class="container">
+                <div class="content_box">
+                    <h2 class="box_heading conn_heading">Tin tức thị trường</h2>
+
+                    <div class="box conn_grid">                        
+                        <div class="box_main">
+                            <div class="main_img">
+                                <img class="conn_anim" src="images/img-7.png" alt="Image">
+                            </div>
+                            <div class="main_caption">
+                                <div class="main_date conn_text">Thứ ba, 27/04/2021 - 06:56</div>
+                                <div class="main_title conn_sheading">
+                                    <a class="conn_anim" href="#" title="">
+                                        Hà Nội sẽ có thêm 8 quận: Liệu xảy ra cơn sốt đất mới?
+                                    </a>
+                                </div>
+                                <div class="main_text conn_btext">
+                                    Theo Chương trình số 04-CTr/TU về đẩy mạnh thực hiện hiệu quả Chương trình mục tiêu quốc gia xây dựng nông thôn vừa được Thành ủy Hà Nội ban hành, đến năm 2030, Hà Nội sẽ có thêm 8 quận.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box_other">                            
+                            <div class="box_items conn_grid">
+                                <div class="item conn_grid">
+                                    <div class="item_img">
+                                        <img class="conn_anim" src="images/img-8.png" alt="Image">
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_date conn_text">Thứ ba, 27/04/2021 - 06:56</div>
+                                        <div class="item_title conn_btext">
+                                            <a class="conn_anim" href="#" title="">
+                                                Xuất hiện mặt hàng tăng giá kỷ lục, giá nhà đã đắt sẽ còn đắt hơn?
+                                            </a>
+                                        </div>
+                                        <div class="item_text">
+                                            Giá thép tăng kỷ lục cũng sẽ đẩy giá nhà trèo lên mức mới. Trong khi đó giá chung cư ở một số thành phố lớn được đánh giá đã ở... mức đắt đỏ, xa tầm tay người lao động.
+                                        </div>
+                                    </div>                      
+                                </div>
+                                <div class="item conn_grid">
+                                    <div class="item_img">
+                                        <img class="conn_anim" src="images/img-9.png" alt="Image">
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_date conn_text">Thứ ba, 27/04/2021 - 06:56</div>
+                                        <div class="item_title conn_btext">
+                                            <a class="conn_anim" href="#" title="">
+                                                Cẩn trọng khi đầu tư đất nền tỉnh lẻ
+                                            </a>
+                                        </div>
+                                        <div class="item_text">
+                                            Không chỉ có môi giới, nhiều nhà đầu tư thứ cấp cũng theo tâm lý đám đông mua gom đất, chờ lên giá để bán lại, tạo ra "cơn sốt ảo" tại hàng loạt địa phương...
+                                        </div>
+                                    </div>                      
+                                </div>
+                                <div class="item conn_grid">
+                                    <div class="item_img">
+                                        <img class="conn_anim" src="images/img-10.png" alt="Image">
+                                    </div>
+                                    <div class="item_caption">
+                                        <div class="item_date conn_text">Thứ ba, 27/04/2021 - 06:56</div>
+                                        <div class="item_title conn_btext">
+                                            <a class="conn_anim" href="#" title="">
+                                                Không bàn giao, bán 1 mảnh đất cho nhiều người, công ty BĐS bị điều tra
+                                            </a>
+                                        </div>
+                                        <div class="item_text">
+                                            Theo Chương trình số 04-CTr/TU về đẩy mạnh thực hiện hiệu quả Chương trình mục tiêu quốc gia xây dựng nông thôn vừa được Thành ủy Hà Nội ban hành, đến năm 2030, Hà Nội sẽ có thêm 8 quận.
+                                        </div>
+                                    </div>                      
+                                </div>
+                            </div>
+                            <a class="box_more conn_white conn_anim">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /News -->
     </main> <!-- /Content -->
     <!-- Footer -->
     <footer id="footer">
@@ -464,7 +1699,7 @@
                     </div>
                     <div class="form conn_flex__center">
                         <form action="index_submit" method="get" accept-charset="utf-8">
-                            <div class="form_box conn_relative">                                
+                            <div class="form_box conn_relative">
                                 <input type="email" name="email" placeholder="Nhập email của bạn">
                                 <button type="submit" class="conn_anim form_button">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -583,7 +1818,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.933" height="14" viewBox="0 0 50.933 14">
                                 <defs>
                                     <clipPath>
-                                        <rect data-name="Rectangle 13" width="50.933" height="14" fill="#292c32" />
+                                        <rect data-name="Rectangle13" width="50.933" height="14" fill="#292c32" />
                                     </clipPath>
                                 </defs>
                                 <g clip-path="url(#clip-path)">
