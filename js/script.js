@@ -48,4 +48,17 @@ jQuery(document).ready(function($) {
         });
     });
 
+    jQuery(document).on('click', '#header .action_menu', function(event) {
+        /* Act on the event */
+        jQuery(this).find('.hamburger-box').toggleClass('active');
+        jQuery('.mobile_menu').toggleClass('open');
+        jQuery('body').toggleClass('none-scroll');
+    });
+    jQuery(document).on('click', '.mobile_dark', function(event) {
+        /* Act on the event */
+        jQuery('.mobile_menu').toggleClass('open');
+        jQuery('#header .hamburger-box').toggleClass('active');
+        jQuery('body').toggleClass('none-scroll');
+    });
+
 });
