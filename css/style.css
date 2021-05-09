@@ -551,6 +551,101 @@ section.content-banner img {
 section.content-search {
   background: url(../images/bg-1.jpg) center/cover;
 }
+section.content-search .content_box .box_form {
+  margin-top: -100px;
+  position: relative;
+  z-index: 9;
+}
+section.content-search .content_box .box_form .form__tabs li {
+  line-height: 36px;
+  margin-bottom: 4px;
+  background: #E9ECF1;
+  border-radius: 4px 4px 0px 0px;
+  margin-right: 4px;
+  padding: 0 16px;
+  color: #252A31;
+  position: relative;
+  cursor: pointer;
+  pointer-events: auto;
+}
+section.content-search .content_box .box_form .form__tabs li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 4px;
+  background: transparent;
+}
+section.content-search .content_box .box_form .form__tabs li:hover, section.content-search .content_box .box_form .form__tabs li.tab_active {
+  background: #fff;
+}
+section.content-search .content_box .box_form .form__tabs li:hover:after, section.content-search .content_box .box_form .form__tabs li.tab_active:after {
+  background: #fff;
+}
+section.content-search .content_box .box_form .form__filter {
+  box-shadow: 0px 4px 8px #292C3229;
+  border-radius: 0px 4px 4px 4px;
+  opacity: 1;
+  background: #fff;
+  padding: 24px;
+}
+section.content-search .content_box .box_form .form__filter .filter__options {
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-column-gap: 16px;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_current {
+  position: relative;
+  line-height: 40px;
+  border: 1px solid #BCC3D2;
+  border-radius: 3px;
+  background: #fff;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_current.has_value span {
+  color: #292C32;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_current .icon__left {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_current .icon__right {
+  position: absolute;
+  right: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_current span {
+  color: #BCC3D2;
+  padding: 0 44px;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_current input {
+  padding: 0 44px;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  color: #292C32;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_current input::-webkit-input-placeholder {
+  color: #BCC3D2;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_current input:-ms-input-placeholder {
+  color: #BCC3D2;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_current input::placeholder {
+  color: #BCC3D2;
+}
+section.content-search .content_box .box_form .form__filter .filter__options .option .option_dropdown {
+  display: none;
+}
+
 /**
  * BDS Comp
  */
@@ -1566,6 +1661,13 @@ section.content-news .box_more:hover {
 }
 #footer .footer-top .box .form .form_button:hover {
   background: #00A394 !important;
+  color: #fff;
+}
+#footer .footer-top .box .form .form_button:hover svg path {
+  fill: #fff;
+}
+#footer .footer-top .box .form .form_button svg {
+  margin-right: 4px;
 }
 #footer .footer-bottom .info {
   grid-template-columns: repeat(3, minmax(100px, 1fr));
