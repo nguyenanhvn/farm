@@ -1,0 +1,72 @@
+/**
+ * Banner
+ */
+ 	section.content-banner{
+ 		height: 400px;
+ 		img{
+ 			object-fit: cover;
+ 			height: 100%;
+ 		}
+ 	}
+
+/**
+ * Search Home Page
+ */
+ 	section.content-search{
+ 		background: url(../images/bg-1.jpg) center /cover;
+ 		.content_box{
+
+ 		}
+ 	}
+
+/**
+ * BDS
+ */
+ 	section.content-bds{
+ 		padding: 57px 0 52px;
+ 		background: #F5F6F9;
+ 		.box_items{
+ 			grid-template-columns: repeat(4, minmax(100px, 1fr));
+ 			grid-gap: 24px;
+ 			.item{
+ 				box-shadow: 0px 0px 2px #292C3229;
+				border-radius: 4px;
+				background: #fff;
+				padding: 12px;
+				position: relative;
+				.item_galleries{
+					position: relative;
+					.item_type{
+						position: absolute;
+						top: 12px;
+						left: 12px;
+						height: 24px;
+						line-height: 22px;
+						padding: 0 8px;
+						border-radius: 12px;
+						&.type_vip{
+							background: #00C2AF;
+							border: 1px solid #00A394;
+						}
+						&.type_hot{
+							background: #C91D1D;
+							border: 1px solid #AE1919;
+						}
+						&.type_other{
+							background: #E07E06;
+							border: 1px solid #C26D05;
+						}
+						svg{
+							margin-right: 2px;
+						}
+						span{
+							color: #fff;
+							font-size: 12px;
+							line-height: 14px;
+							font-weight: 500;
+						}
+					}
+				}
+ 			}
+ 		}
+ 	}

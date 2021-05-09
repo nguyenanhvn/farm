@@ -1,0 +1,124 @@
+/**
+ * Header
+ */
+ 	#header{
+ 		@media (max-width: 992px){
+ 			display: none;
+ 		}
+ 		.header-top{
+ 			padding: 8px 0;
+ 			background: #00332E;
+ 			.box{
+ 				justify-content: space-between;
+ 				.item{
+ 					font-size: 12px;
+ 					line-height: 16px;
+ 					color: $color;
+ 					+ .item{
+ 						margin-left: 33px;
+ 					}
+ 					.item_icon{
+ 						width: 16px;
+ 						position: relative;
+ 						top: -1px;
+ 					}
+ 					.item_content{
+ 						margin-left: 8px;
+ 						a{
+ 							color: #E9F7F5;
+ 							@include transition;
+						    background-image: linear-gradient(#E9F7F5, #E9F7F5);
+						    background-position: 0% 100%;
+						    background-repeat: no-repeat;
+						    background-size: 0% 1px;
+						    text-decoration: none;
+							&:hover{
+						    	background-size: 100% 1px;
+							}
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 		.header-bottom{
+ 			background: #fff;
+ 			.box{
+ 				grid-template-columns: 212px 1fr 212px;
+ 				.bottom_logo{
+		 			padding: 16px 0;
+ 					line-height: 40px;
+ 				}
+ 				.bottom_menu{
+ 					display: table;
+ 					margin: auto;
+ 					ul{
+ 						li{
+ 							margin: 0 16px;
+ 							@media (max-width: 1200px){
+ 								margin: 0 10px;
+ 							}
+ 							a{
+ 								display: block;
+ 								line-height: 72px;
+ 								color: $color-text;
+	 							@include transition;
+	 							position: relative;
+								&:hover,
+								&.active{
+									color: $color;
+									&:after{
+										width: 100%;
+									}
+								}
+								&:after{
+									content: '';
+									position: absolute;
+									bottom: 0;
+									left: 0;
+									right: 0;
+									width: 0;
+									@include transition;
+									height: 2px;
+									margin: auto;
+									background: $color;
+								}
+ 							}
+ 						}
+ 					}
+ 				}
+ 				.bottom_actions{
+ 					grid-template-columns: 40px 40px 1fr;
+ 					grid-gap: 10px;
+		 			padding: 16px 0;
+ 					.action{
+ 						line-height: 40px;
+ 						height: 40px;
+ 						position: relative;
+ 						text-align: center;
+						background: #E3E6ED;
+						border-radius: 8px;
+						&:hover{
+							background: $color;
+							svg path{
+								fill: #fff;
+							}
+						}
+						&.action__btn{
+							background: $color;
+							color: #fff;
+							padding: 0 15px;
+							svg{
+								margin-right: 2px;
+							}
+							&:hover{
+								background: $color-hover;
+							}
+						}
+						svg path{
+							@include transition;
+						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
