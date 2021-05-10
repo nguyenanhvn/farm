@@ -113,9 +113,13 @@
 										bottom: 0;
 										margin: auto;
 									}
+									svg{
+										pointer-events: none;
+									}
 									span{
 										color: #BCC3D2;
 										padding: 0 44px;
+										pointer-events: none;
 									}
 									input{
 										padding: 0 44px;

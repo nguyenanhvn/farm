@@ -72,7 +72,9 @@ jQuery(document).ready(function($) {
 
 // Dropdown
     jQuery(document).on('click', '.option_current', function() {
+        jQuery('.option').removeClass('open');
         jQuery(this).parent().addClass('open');
+        jQuery('.control_dropdown').removeClass('open');
     });
 
     jQuery(document).on('click', '.option_dropdown ul li', function() {
@@ -85,6 +87,7 @@ jQuery(document).ready(function($) {
 
     jQuery(document).on('click', '.dropdown_current', function() {
         jQuery(this).parent().addClass('open');
+        jQuery('.option').removeClass('open');
     });
 
     jQuery(document).on('click', '.dropdown_options ul li', function() {
@@ -97,6 +100,9 @@ jQuery(document).ready(function($) {
     jQuery(document).on('click', 'body', function(e){
         if(e && e.target && e.target.offsetParent && e.target.offsetParent.className.indexOf('option') == -1){
             jQuery('.option').removeClass('open');
+        }
+        if(e && e.target && e.target.offsetParent && e.target.offsetParent.className.indexOf('control_dropdown') == -1){
+            jQuery('.control_dropdown').removeClass('open');
         }
     });
 
