@@ -60,6 +60,99 @@
 		}
 	}
 
+    .conn_ibutton{
+        line-height: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;        
+        background: $color;
+        color: #fff;
+        pointer-events: auto;
+        @include transition;
+        padding: 0 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        font-weight: 500;
+        &:hover{
+            background: #00A394;
+            color: #fff;
+            svg path{
+                fill: #fff;
+            }
+        }
+        svg{
+            margin-right: 2spx;
+        }
+        svg path{
+            @include transition;
+        }
+        svg, span{
+            pointer-events: none;
+        }
+    }
+
+    .conn_icon{
+        width: 40px;
+        line-height: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        background: #E3E6ED;
+        border-radius: 8px;
+        cursor: pointer;
+        pointer-events: auto;
+        @include transition;
+        &:hover{
+            background: #dce1ea;
+        }
+        svg{
+            pointer-events: none;
+        }
+    }
+
+    .conn_sicon{
+        width: 32px;
+        line-height: 32px;
+        height: 32px;
+        position: relative;
+        text-align: center;
+        background: #E3E6ED;
+        border-radius: 8px;
+        cursor: pointer;
+        pointer-events: auto;
+        @include transition;
+        &:hover{
+            background: #dce1ea;
+        }
+        &.active{
+            svg{
+                path{
+                    fill: #00c2af;
+                    &.i_active{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        svg{
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            path{                
+                @include transition;
+                &.i_active{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
     .conn_relative{
         position: relative;
         z-index: 9;
@@ -313,7 +406,7 @@
         transform: translate3d(-50%,-10px,0);
         bottom: auto;
         left: 50%;
-        top: 100%
+        top: 102%
     }
 
     [role~="tooltip"][data-microtip-position|="bottom"]:hover::before {

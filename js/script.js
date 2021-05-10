@@ -1,4 +1,11 @@
-jQuery(document).ready(function($) {    
+jQuery(document).ready(function($) {  
+
+// Init
+    header();
+    jQuery(window).scroll(function() {
+        header();
+    });
+
     if (jQuery('.item_slider').length > 0) {
         jQuery('.item_slider').owlCarousel({
             loop: true,
@@ -26,7 +33,12 @@ jQuery(document).ready(function($) {
         });
     }
 
-    jQuery(document).on('click', '.item_like', function(e) {
+    jQuery(document).on('click', '.conn_sicon', function(e) {
+        if(jQuery(this).hasClass('active')){
+            jQuery(this).attr('aria-label', 'Bấm để lưu tin');
+        } else {
+            jQuery(this).attr('aria-label', 'Bấm để bỏ lưu tin');
+        }
         jQuery(this).toggleClass('active');
     });
 
@@ -49,6 +61,11 @@ jQuery(document).ready(function($) {
     });
 
 // Menu
+    jQuery(document).on('click', '.header-scroll .logo_hambuger', function(event) {
+        /* Act on the event */
+        jQuery(this).find('.hamburger-box').toggleClass('active');
+        jQuery('.mobile_menu').toggleClass('open');
+    });
     jQuery(document).on('click', '#header .action_menu', function(event) {
         /* Act on the event */
         jQuery(this).find('.hamburger-box').toggleClass('active');
@@ -94,6 +111,9 @@ jQuery(document).ready(function($) {
         jQuery(this).closest('.control_dropdown').find('.dropdown_current span').text(jQuery(this).text());
         jQuery(this).closest('.control_dropdown').find('.dropdown_current').addClass('has_value');
         jQuery(this).closest('.control_dropdown').removeClass('open');
+        jQuery(this).closest('.control_dropdown').find('ul li').removeClass('current');
+        jQuery(this).addClass('current');
+        jQuery('.dropdown_current .icon__left').html(jQuery(this).find('.li_icon').html());
     });
 
 // Handle Body
@@ -107,3 +127,17 @@ jQuery(document).ready(function($) {
     });
 
 });
+
+function header() {
+    // Scroll article
+    jQuery(window).scroll(function(event) {
+        var scroll = jQuery(window).scrollTop();
+        if (scroll > 200) {
+            jQuery('#header').addClass('active');
+            jQuery('#header-responsive').addClass('active');
+        } else {
+            jQuery('#header').removeClass('active');
+            jQuery('#header-responsive').removeClass('active');
+        }
+    });
+}
