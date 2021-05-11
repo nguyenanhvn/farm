@@ -44,6 +44,9 @@
 		&.none-scroll{
 			overflow: hidden;
 		}
+        @media (max-width: 992px){
+            padding-top: 56px;
+        }
 	}
 	
 	a{cursor: pointer; pointer-events: auto}
@@ -284,6 +287,10 @@
         font-size: 16px;
         line-height: 24px;
         color: $color-text;
+        @media (max-width: 450px){
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
     .conn_text{
         font-size: 12px;
@@ -297,6 +304,32 @@
         &:hover,
         &:focus{
             color: #fff;
+        }
+    }
+
+    .conn_tags{
+        margin-top: 5px;
+        li{
+            margin: 12px 12px 0 0;
+            a{
+                display: block;
+                color: #fff;
+                line-height: 32px;
+                padding: 0 12px;
+                background: #4A5264;
+                border-radius: 4px;
+                @include transition;
+                font-size: 12px;
+                &:hover{
+                    background: #3d4452;
+                }
+                span{
+                    pointer-events: none;
+                    + span{
+                        margin-left: 4px;
+                    }
+                }
+            }
         }
     }
 

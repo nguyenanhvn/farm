@@ -14,6 +14,33 @@
  	}
 
 /**
+ * Breadcrumb
+ */
+ 	section.content-breadcrumb{
+ 		padding: 24px 0;
+ 		box-shadow: 0 0 2px rgba(#292C32, 0.16);
+ 		.content_box{
+ 			font-size: 12px;
+ 			line-height: 14px;
+ 			font-weight: 500;
+ 			*{
+ 				color: $slate;
+ 			}
+ 			.line{
+ 				margin: 0 8px;
+ 			}
+ 			a:hover{
+ 				text-decoration: underline;
+ 			}
+ 			svg{
+ 				pointer-events: none;
+ 				position: relative;
+ 				top: -2px;
+ 			}
+ 		}
+ 	}
+
+/**
  * Search Home Page
  */
  	section.content-search{
@@ -828,31 +855,6 @@
  		}
  		.box_tags{
  			margin-top: 54px;
- 			.tags{
- 				margin-top: 5px;
- 				li{
- 					margin: 12px 12px 0 0;
-					a{
-						display: block;
-						color: #fff;
-	 					line-height: 32px;
-	 					padding: 0 12px;
-	 					background: #4A5264;
-						border-radius: 4px;
-						@include transition;
-						font-size: 12px;
-						&:hover{
-							background: #3d4452;
-						}
-						span{
-							pointer-events: none;
-							+ span{
-								margin-left: 4px;
-							}
-						}
-					}
- 				}
- 			}
  		}
  	}
 

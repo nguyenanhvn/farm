@@ -43,6 +43,7 @@ jQuery(document).ready(function($) {
         });
     }
 
+// Active Icon
     jQuery(document).on('click', '.conn_sicon', function(e) {
         if(jQuery(this).hasClass('active')){
             jQuery(this).attr('aria-label', 'Bấm để lưu tin');
@@ -52,6 +53,7 @@ jQuery(document).ready(function($) {
         jQuery(this).toggleClass('active');
     });
 
+// Tabs
     var tabInputs = document.querySelectorAll('.tabInput');
 
     tabInputs.forEach(function(input) {
