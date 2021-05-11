@@ -98,7 +98,9 @@ jQuery(document).ready(function($) {
         jQuery(this).closest('.option').find('.option_current span').text(jQuery(this).text());
         jQuery(this).closest('.option').find('.option_current input').val(jQuery(this).text());
         jQuery(this).closest('.option').find('.option_current').addClass('has_value');
+        jQuery(this).closest('.option').find('ul li').removeClass('current');
         jQuery(this).closest('.option').removeClass('open');
+        jQuery(this).addClass('current');
     });
 
 

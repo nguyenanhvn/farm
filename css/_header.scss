@@ -151,9 +151,12 @@
 	 		box-shadow: 0px 4px 8px #292C3229;
 	 		z-index: 10;
  			@include transition;
+ 			@media (max-width: 992px){
+ 				display: none;
+ 			}
  			.box{
  				grid-template-columns: 212px 1fr 212px;
- 				.bottom_logo{
+ 				.scroll_logo{
  					line-height: 40px;
  					grid-template-columns: 40px 1fr;
  					grid-column-gap: 16px;
@@ -246,45 +249,194 @@
 						}
 					}
  				}
- 				.bottom_menu{
- 					display: table;
- 					margin: auto;
- 					ul{
- 						li{
- 							margin: 0 16px;
- 							@media (max-width: 1200px){
- 								margin: 0 10px;
- 							}
- 							a{
- 								display: block;
- 								line-height: 72px;
- 								color: $color-text;
-	 							@include transition;
-	 							position: relative;
-								&:hover,
-								&.active{
-									color: $color;
-									&:after{
-										width: 100%;
+ 				.scroll_filter{
+					.filter__control{
+						grid-template-columns: 1fr 40px;
+						max-width: 588px;
+						margin: auto;
+						@media (max-width: 1200px){
+							width: 90%;
+						}
+						.control_box{							
+							grid-template-columns: 254px 1fr;
+							border: 1px solid #BCC3D2;
+							border-right: 0;
+							border-radius: 3px 0 0 3px;
+							height: 40px;
+							.control_dropdown{
+								position: relative;
+								&.open{
+									.dropdown_options{
+										opacity: 1;
+										visibility: visible;
 									}
 								}
-								&:after{
+								.dropdown_current{
+									position: relative;
+									line-height: 36px;
+									border-radius: 3px;
+									background: #fff;
+									height: 38px;
+									padding-top: 2px;
+								    overflow: hidden;
+								    text-overflow: ellipsis;
+								    white-space: nowrap;
+									&.has_value{
+										span{
+											color: #292C32;
+										}
+									}
+									.icon__left{
+										position: absolute;
+										left: 12px;
+										top: 0;
+										bottom: 0;
+										margin: auto;
+										width: 24px;
+										height: auto;
+										svg{
+											width: 24px;
+											height: auto;
+										}
+									}
+									.icon__right{
+										position: absolute;
+										right: 12px;
+										top: 0;
+										bottom: 0;
+										margin: auto;
+									}
+									svg{
+										pointer-events: none;
+									}
+									span{
+										color: #BCC3D2;
+										padding: 0 44px;
+										pointer-events: none;
+									}
+									input{
+										padding: 0 44px;
+										border: 0;
+										outline: none;
+										border-radius: 0;
+										color: #292C32;
+										&::-webkit-input-placeholder {
+										  	color: #BCC3D2;
+										}
+
+										&:-ms-input-placeholder {
+										  	color: #BCC3D2;
+										}
+
+										&::placeholder {
+										  	color: #BCC3D2;
+										}
+									}
+								}
+								.dropdown_options{
+									opacity: 0;
+									visibility: hidden;
+									position: absolute;
+								    top: 50px;
+								    left: -1px;
+								    right: -1px;
+								    background: #fff;
+								    z-index: 99;
+							        border-radius: 4px;
+								    box-shadow: 0px 1px 8px rgba(#252A31, 0.16);
+								    padding: 4px 0;
+								    ul{
+								    	list-style-type: none;
+								    	padding: 0;
+								    	margin: 0;
+									    max-height: 240px;
+									    overflow: auto;
+								    	li{
+								    		padding: 12px 36px 9px;
+										    color: #252A31;
+										    line-height: 19px;
+										    position: relative;
+										    &:hover{
+										    	background: #E9F7F5;
+										    }
+										    &.current{
+										    	background: #E9F7F5;
+										    	color: #00C2AF;
+										    	&:after{
+										    		content: '';
+										    		background: url(../images/icon-tick.svg) center /cover;
+										    		width: 16px;
+										    		height: 16px;
+										    		position: absolute;
+										    		top: 12px;
+										    		right: 12px;
+										    	}
+										    	svg path{
+										    		fill: #00C2AF;
+										    	}
+										    }
+										    .li_icon{
+										    	position: absolute;
+										    	top: 10px;
+										    	left: 12px;
+										    	svg{
+										    		width: 16px;
+										    		height: auto;
+										    	}
+										    }
+										    .li_icon,
+										    .li_text{
+										    	pointer-events: none;
+										    }
+								    	}
+								    }
+								}
+							}
+							.control_input{
+								position: relative;
+								&:before{
 									content: '';
 									position: absolute;
-									bottom: 0;
 									left: 0;
-									right: 0;
-									width: 0;
-									@include transition;
-									height: 2px;
-									margin: auto;
-									background: $color;
+									top: 8px;
+									bottom: 8px;
+									background: #BCC3D2;
+									width: 1px;
 								}
- 							}
- 						}
- 					}
+								input{
+									width: 100%;
+									line-height: 36px;
+									border: 0;
+									border-radius: 0;
+									outline: none;
+									padding: 2px 16px 0;
+									color: #292C32;
+									&::-webkit-input-placeholder {
+									  	color: #BCC3D2;
+									}
+
+									&:-ms-input-placeholder {
+									  	color: #BCC3D2;
+									}
+
+									&::placeholder {
+									  	color: #BCC3D2;
+									}
+								}
+							}
+						}
+						.conn_icon{
+							background: $color;
+							border: 0;
+							outline: none;
+							border-radius: 0 3px 3px 0;
+							&:hover{
+								background: $color-hover;
+							}
+						}
+					}
  				}
- 				.bottom_actions{
+ 				.scroll_actions{
  					grid-template-columns: 40px 40px 1fr;
  					grid-gap: 10px;
  					.action{
