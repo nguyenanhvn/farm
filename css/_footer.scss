@@ -196,5 +196,22 @@
  		}
  	}
  	#scroll{
- 		display: none;
+ 		position: fixed;
+ 		bottom: 24px;
+ 		right: 24px;
+ 		background: $color;
+ 		opacity: 0;
+ 		visibility: hidden;
+ 		z-index: 90;
+ 		@media (max-width: 767px){
+ 			bottom: 40px;
+ 			right: 10px;
+ 		}
+ 		&.scroll{
+ 			opacity: 1;
+ 			visibility: visible;
+ 		}
+ 		&:hover{
+ 			background: $color-hover;
+ 		}
  	}

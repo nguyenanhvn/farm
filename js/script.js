@@ -6,6 +6,16 @@ jQuery(document).ready(function($) {
         header();
     });
 
+// Scroll
+    jQuery(document).on('click', '#scroll', function(){
+        window.scroll({
+          top: 0, 
+          left: 0, 
+          behavior: 'smooth'
+        });
+    })
+
+// Slider
     if (jQuery('.item_slider').length > 0) {
         jQuery('.item_slider').owlCarousel({
             loop: true,
@@ -127,7 +137,6 @@ jQuery(document).ready(function($) {
             jQuery('.control_dropdown').removeClass('open');
         }
     });
-
 });
 
 function header() {
@@ -136,10 +145,10 @@ function header() {
         var scroll = jQuery(window).scrollTop();
         if (scroll > 200) {
             jQuery('#header').addClass('active');
-            jQuery('#header-responsive').addClass('active');
+            jQuery('#scroll').addClass('scroll');
         } else {
             jQuery('#header').removeClass('active');
-            jQuery('#header-responsive').removeClass('active');
+            jQuery('#scroll').removeClass('scroll');
         }
     });
 }

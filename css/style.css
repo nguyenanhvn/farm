@@ -2678,7 +2678,26 @@ section.content-news .box_more:hover {
 }
 
 #scroll {
-  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #00C2AF;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 90;
+}
+@media (max-width: 767px) {
+  #scroll {
+    bottom: 40px;
+    right: 10px;
+  }
+}
+#scroll.scroll {
+  opacity: 1;
+  visibility: visible;
+}
+#scroll:hover {
+  background: #00A394;
 }
 
 /*# sourceMappingURL=style.css.map */
