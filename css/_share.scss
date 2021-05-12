@@ -86,10 +86,54 @@
             }
         }
         svg{
-            margin-right: 2spx;
+            margin-right: 2px;
         }
         svg path{
             @include transition;
+        }
+        svg, span{
+            pointer-events: none;
+        }
+    }
+    .conn_sibutton{
+        display: inline-block;
+        line-height: 32px;
+        height: 32px;
+        position: relative;
+        text-align: center;        
+        background: #E3E6ED;
+        color: #292C32 !important;
+        pointer-events: auto;
+        @include transition;
+        padding: 0 14px 0 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        font-weight: 500;
+        font-size: 12px;
+        &:hover{
+            background: #dce1ea;
+        }
+
+        &.active{
+            svg{
+                path{
+                    fill: #00c2af;
+                    &.i_active{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        svg{
+            margin-right: 2px;
+        }
+        svg path{
+            @include transition;
+            &.i_active{
+                opacity: 0;
+            }
         }
         svg, span{
             pointer-events: none;

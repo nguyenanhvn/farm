@@ -43,8 +43,36 @@ jQuery(document).ready(function($) {
         });
     }
 
+    var galleryTop = new Swiper('.gallery-top', {
+        slidesPerView: 1,  
+        loop: true,
+        loopedSlides: 50,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        direction: 'vertical',
+        slideToClickedSlide: true,
+        spaceBetween: 16,
+        loopedSlides: 50,
+        loop: true,
+        slidesPerView: 5,
+        breakpoints: {
+            500: {
+                slidesPerView: 5,
+            },
+            1024: {
+                slidesPerView: 7,
+            },
+        },
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+
 // Active Icon
-    jQuery(document).on('click', '.conn_sicon', function(e) {
+    jQuery(document).on('click', '.conn_sicon, .conn_like', function(e) {
         if(jQuery(this).hasClass('active')){
             jQuery(this).attr('aria-label', 'Bấm để lưu tin');
         } else {
@@ -139,6 +167,30 @@ jQuery(document).ready(function($) {
             jQuery('.control_dropdown').removeClass('open');
         }
     });
+
+// Click Show Phone
+    jQuery(document).on('click', '.phone__click', function(){
+        if(!jQuery(this).hasClass('active')) {
+            jQuery(this).parent().find('.phone__number').text(jQuery(this).parent().find('.phone__number').attr('number'));
+            jQuery(this).parent().find('#myNumber').val(jQuery(this).parent().find('.phone__number').attr('number'));
+            jQuery(this).text('Sao chép');
+            jQuery(this).addClass('active')
+        } else {
+            /* Get the text field */
+            var copyText = document.getElementById("myNumber");
+
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+            jQuery('.phone__msg').fadeIn(300);
+            setTimeout(function(){
+                jQuery('.phone__msg').fadeOut(300);
+            }, 2000);
+        }
+    });
 });
 
 function header() {
@@ -153,4 +205,10 @@ function header() {
             jQuery('#scroll').removeClass('scroll');
         }
     });
+}
+
+function fbShare(url, title, descr, image, winWidth, winHeight) {
+    var winTop = (screen.height / 2) - (winHeight / 2);
+    var winLeft = (screen.width / 2) - (winWidth / 2);
+    window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
 }

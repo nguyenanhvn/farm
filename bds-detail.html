@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 
@@ -344,7 +346,142 @@
         <!-- BDS Detail -->
         <section class="content-bdetail">
             <div class="content_top">
-                <div class="container"></div>
+                <div class="container">
+                    <div class="content_post conn_flex">
+                        <ul class="conn_ul actions conn_flex">
+                            <li class="action">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                    <path d="M8.667,15.333a6.667,6.667,0,1,1,6.667-6.667A6.667,6.667,0,0,1,8.667,15.333Zm0-1.333A5.333,5.333,0,1,0,3.333,8.667,5.333,5.333,0,0,0,8.667,14Zm.667-5.333H12V10H8V5.333H9.333Z" transform="translate(-0.667 -0.667)" fill="#4a5264" />
+                                </svg>
+                                <span>Ngày đăng: 27/04/2021</span>
+                            </li>
+                            <li class="action">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                    <g transform="translate(0.5 0.5)">
+                                        <path d="M0,0H16V16H0Z" fill="#4a5264" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0" />
+                                        <path d="M8.394,3a7.336,7.336,0,0,1,7.213,6A7.335,7.335,0,0,1,1.181,9,7.336,7.336,0,0,1,8.394,3Zm0,10.667A6,6,0,0,0,14.245,9a6,6,0,0,0-11.7,0,6,6,0,0,0,5.851,4.666Zm0-1.667a3,3,0,1,1,3-3A3,3,0,0,1,8.394,12Zm0-1.333A1.667,1.667,0,1,0,6.727,9,1.667,1.667,0,0,0,8.394,10.667Z" transform="translate(-0.394 -1)" fill="#4a5264" />
+                                    </g>
+                                </svg>
+                                <span>Lượt xem: 5,216</span>
+                            </li>
+                        </ul>
+                        <ul class="conn_ul actions conn_flex">
+                            <li>
+                                <a href="javascript:fbShare('http://jsfiddle.net/stichoza/EYxTJ/', 'Fb Share', 'Facebook share popup', 'http://goo.gl/dS52U', 520, 350)" class="action conn_sibutton">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0"></path>
+                                        <path d="M9.667,10.167H8.333a6,6,0,0,0-5.312,3.207Q3,13.1,3,12.833A6.667,6.667,0,0,1,9.667,6.167V2.5l7,5.667-7,5.667ZM8.333,8.833H11v2.205l3.547-2.872L11,5.295V7.5H9.667A5.321,5.321,0,0,0,5.629,9.349a7.325,7.325,0,0,1,2.7-.515Z" transform="translate(-1 -0.833)" fill="#292c32"></path>
+                                    </svg>
+                                    <span>Chia sẻ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="action conn_sibutton conn_like">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0"></path>
+                                        <path class="i_active" d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3Z" transform="translate(-0.667 -1)" fill="#00c2af"></path>
+                                        <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264"></path>
+                                    </svg>
+                                    <span>Lưu tin</span>
+                                </div>                                    
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content_box conn_grid">
+                        <div class="box__galleries conn_grid">
+                            <div class="swiper-container gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="background-image: url(images/bds-detail-2.jpg);"></div>
+                                    <div class="swiper-slide" style="background-image: url(images/bds-detail-3.jpg);"></div>
+                                    <div class="swiper-slide" style="background-image: url(images/bds-detail-4.jpg);"></div>
+                                    <div class="swiper-slide" style="background-image: url(images/bds-detail-5.jpg);"></div>
+                                    <div class="swiper-slide" style="background-image: url(images/bds-detail-1.jpg);"></div>
+                                    <div class="swiper-slide" style="background-image: url(images/bds-detail-2.jpg);"></div>
+                                    <div class="swiper-slide" style="background-image: url(images/bds-detail-3.jpg);"></div>
+                                    <div class="swiper-slide" style="background-image: url(images/bds-detail-4.jpg);"></div>
+                                    <div class="swiper-slide" style="background-image: url(images/bds-detail-5.jpg);"></div>
+                                    <div class="swiper-slide" style="background-image: url(images/bds-detail-1.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-container gallery-top">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/bds-detail-2.jpg" alt="Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/bds-detail-3.jpg" alt="Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/bds-detail-4.jpg" alt="Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/bds-detail-5.jpg" alt="Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/bds-detail-1.jpg" alt="Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/bds-detail-2.jpg" alt="Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/bds-detail-3.jpg" alt="Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/bds-detail-4.jpg" alt="Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/bds-detail-5.jpg" alt="Image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/bds-detail-1.jpg" alt="Image">
+                                    </div>
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                        <div class="box__infor">
+                            <h2 class="i__heading conn_heading">
+                                Bán khuôn viên nhà vườn nghỉ dưỡng 8,250m2 có 800 m2 thổ cư, chia sẵn 4 lô thổ cư 3tr/m2
+                            </h2>
+
+                            <div class="i__location conn_grid conn_text conn_up">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0"></path>
+                                    <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af"></path>
+                                </svg>
+                                <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                            </div>
+                            <div class="i__line"></div>
+                            <div class="i__info">
+                                <ul class="conn_ul">
+                                    <li class="conn_grid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0"></path>
+                                            <path d="M14.333,3A.667.667,0,0,1,15,3.667V14.333a.667.667,0,0,1-.667.667H3.667A.667.667,0,0,1,3,14.333V3.667A.667.667,0,0,1,3.667,3ZM8.459,9.772,4.333,10.5v3.167H9.145L8.459,9.772Zm5.207-5.439H8.854L10.5,13.667h3.167Zm-6.167,0H4.333V9.145l3.895-.687Z" transform="translate(-1 -1)" fill="#292c32"></path>
+                                        </svg>
+                                        <span>Trang trại, khu nghỉ dưỡng</span>
+                                    </li>
+                                    <li class="conn_grid">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0"></path>
+                                            <path d="M6,6v5.333h5.333V6ZM4.667,4.667h8v8h-8ZM4.667,2H6V4H4.667Zm0,11.333H6v2H4.667ZM2,4.667H4V6H2Zm0,6.667H4v1.333H2ZM13.333,4.667h2V6h-2Zm0,6.667h2v1.333h-2ZM11.333,2h1.333V4H11.333Zm0,11.333h1.333v2H11.333Z" transform="translate(-0.667 -0.667)" fill="#292c32"></path>
+                                        </svg>
+                                        <span>3000m2</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="i__line"></div>
+                            <div class="i__bottom">
+                                <div class="i__price conn_text">
+                                    <span>Giá</span> <strong>4,4 tỷ đồng</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="content_bottom">
                 <div class="container">
@@ -355,11 +492,8 @@
                                     <div class="child_title conn_sheading">Thông tin mô tả</div>
                                     <div class="child_paragraph conn_grid conn_btext">
                                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-
                                         <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-
                                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elit. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-
                                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elit.</p>
                                     </div>
                                 </div>
@@ -392,7 +526,47 @@
                                 </div>
                                 <div class="child">
                                     <div class="child_title conn_sheading">Xem trên bản đồ</div>
-                                </div>                           
+                                    <div class="child_map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15676.120603619083!2d107.33121478438942!3d10.809002609295272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175aafad128a423%3A0x64536783a31256df!2zWHXDom4gVMOieSwgQ-G6qW0gTeG7uSwgxJDhu5NuZyBOYWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1620784869685!5m2!1svi!2s" width="100%" height="266" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>
+                                    <div class="child_actions">                                        
+                                        <a href="javascript:fbShare('http://jsfiddle.net/stichoza/EYxTJ/', 'Fb Share', 'Facebook share popup', 'http://goo.gl/dS52U', 520, 350)" class="action conn_sibutton">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0"></path>
+                                                <path d="M9.667,10.167H8.333a6,6,0,0,0-5.312,3.207Q3,13.1,3,12.833A6.667,6.667,0,0,1,9.667,6.167V2.5l7,5.667-7,5.667ZM8.333,8.833H11v2.205l3.547-2.872L11,5.295V7.5H9.667A5.321,5.321,0,0,0,5.629,9.349a7.325,7.325,0,0,1,2.7-.515Z" transform="translate(-1 -0.833)" fill="#292c32"></path>
+                                            </svg>
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                        <div class="action conn_sibutton conn_like">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0"></path>
+                                                <path class="i_active" d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3Z" transform="translate(-0.667 -1)" fill="#00c2af"></path>
+                                                <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264"></path>
+                                            </svg>
+                                            <span>Lưu tin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="child">
+                                    <ul class="conn_ul child_info conn_grid">
+                                        <li>
+                                            <span>Mã tin</span>
+                                            <span>28712299</span>
+                                        </li>
+                                        <li>
+                                            <span>Loại tin</span>
+                                            <span>Tin VIP</span>
+                                        </li>
+                                        <li>
+                                            <span>Ngày đăng</span>
+                                            <span>27/04/2021</span>
+                                        </li>
+                                        <li>
+                                            <span>Ngày hết hạn</span>
+                                            <span>07/05/2021</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="box__tags box__white">
                                 <div class="conn_sheading conn_sheading">Từ khóa liên quan</div>
@@ -446,6 +620,171 @@
                                         </a>
                                     </li>
                                 </ul>
+                            </div>
+                        </div>
+                        <div class="box_sidebar">
+                            <div class="box_user box__white">
+                                <div class="user__avatar">
+                                    <img src="images/avatar.png" alt="Avatar">
+                                </div>
+                                <div class="user__name conn_sheading conn_center">Nguyen Thi Van A</div>
+                                <div class="user__news conn_center">Xem thêm 5 tin khác</div>
+                                <a class="user__chat conn_center conn_ibutton">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                                        <g transform="translate(0.5 0.5)">
+                                            <path d="M0,0H24V24H0Z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0" />
+                                            <path d="M12,2a9.7,9.7,0,1,1,0,19.4,10.894,10.894,0,0,1-2.895-.384.8.8,0,0,0-.534.039l-1.984.876a.8.8,0,0,1-1.123-.707l-.055-1.78a.8.8,0,0,0-.268-.57A9.482,9.482,0,0,1,2,11.7,9.651,9.651,0,0,1,12,2ZM5.995,14.537a.475.475,0,0,0,.689.631l3.155-2.394a.6.6,0,0,1,.723,0l2.337,1.75a1.5,1.5,0,0,0,2.169-.4L18,9.464a.476.476,0,0,0-.689-.633l-3.155,2.4a.6.6,0,0,1-.723,0L11.1,9.477a1.5,1.5,0,0,0-2.169.4L6,14.537Z" fill="#fff" />
+                                        </g>
+                                    </svg>
+                                    <span>Chat với người đăng tin</span>
+                                </a>
+                                <div class="user__phone conn_flex">
+                                    <span class="phone__number" number="0988 888 888">0988 888 •••</span>
+                                    <input type="text" name="number" id="myNumber">
+                                    <span class="phone__click">Nhấn để hiện số</span>
+                                    <div class="phone__msg" style="display: none">Đã sao chép</div>
+                                </div>
+                            </div>
+                            <div class="box_bds">
+                                <h3 class="conn_sheading">Bất động sản nổi bật</h3>
+                                <div class="box_items conn_grid">
+                                    <div class="item">
+                                        <div class="item_galleries">
+                                            <div class="item_type type_other">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                                    <g transform="translate(0.5 0.5)">
+                                                        <path d="M0,0H16V16H0Z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0" />
+                                                        <path d="M4796.631,647.449l2.468,3.612,4.2,1.232-2.672,3.464.125,4.373-4.12-1.471-4.12,1.471.125-4.373-2.672-3.464,4.2-1.232Z" transform="translate(-4788.63 -646.116)" fill="#fff" />
+                                                    </g>
+                                                </svg>
+                                                <span>Nổi bật</span>
+                                            </div>
+                                            <div class="item_slider owl-carousel">
+                                                <div class="child">
+                                                    <img src="images/Rectangle-4.png" alt="Image">
+                                                </div>
+                                                <div class="child">
+                                                    <img src="images/Rectangle-2.png" alt="Image">
+                                                </div>
+                                                <div class="child">
+                                                    <img src="images/Rectangle-3.png" alt="Image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item_caption">
+                                            <div class="item_name">
+                                                <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                            </div>
+                                            <div class="item_location conn_grid conn_text conn_up">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                    <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                                </svg>
+                                                <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                            </div>
+                                            <div class="item_line"></div>
+                                            <div class="item_info">
+                                                <ul class="conn_ul">
+                                                    <li class="conn_grid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                            <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                            <path d="M14.333,3A.667.667,0,0,1,15,3.667V14.333a.667.667,0,0,1-.667.667H3.667A.667.667,0,0,1,3,14.333V3.667A.667.667,0,0,1,3.667,3ZM8.459,9.772,4.333,10.5v3.167H9.145L8.459,9.772Zm5.207-5.439H8.854L10.5,13.667h3.167Zm-6.167,0H4.333V9.145l3.895-.687Z" transform="translate(-1 -1)" fill="#292c32" />
+                                                        </svg>
+                                                        <span>Trang trại, khu nghỉ dưỡng</span>
+                                                    </li>
+                                                    <li class="conn_grid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                            <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                            <path d="M6,6v5.333h5.333V6ZM4.667,4.667h8v8h-8ZM4.667,2H6V4H4.667Zm0,11.333H6v2H4.667ZM2,4.667H4V6H2Zm0,6.667H4v1.333H2ZM13.333,4.667h2V6h-2Zm0,6.667h2v1.333h-2ZM11.333,2h1.333V4H11.333Zm0,11.333h1.333v2H11.333Z" transform="translate(-0.667 -0.667)" fill="#292c32" />
+                                                        </svg>
+                                                        <span>3000m2</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="item_line"></div>
+                                            <div class="item_bottom conn_flex">
+                                                <div class="item_price conn_text">
+                                                    <span>Giá</span> <strong>Thỏa thuận</strong>
+                                                </div>
+                                                <div class="conn_sicon tooltipMarking" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                        <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                        <path class="i_active" d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3Z" transform="translate(-0.667 -1)" fill="#00c2af" />
+                                                        <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item_galleries">
+                                            <div class="item_type type_other">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                                    <g transform="translate(0.5 0.5)">
+                                                        <path d="M0,0H16V16H0Z" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0" />
+                                                        <path d="M4796.631,647.449l2.468,3.612,4.2,1.232-2.672,3.464.125,4.373-4.12-1.471-4.12,1.471.125-4.373-2.672-3.464,4.2-1.232Z" transform="translate(-4788.63 -646.116)" fill="#fff" />
+                                                    </g>
+                                                </svg>
+                                                <span>Nổi bật</span>
+                                            </div>
+                                            <div class="item_slider owl-carousel">
+                                                <div class="child">
+                                                    <img src="images/Rectangle-9.png" alt="Image">
+                                                </div>
+                                                <div class="child">
+                                                    <img src="images/Rectangle-2.png" alt="Image">
+                                                </div>
+                                                <div class="child">
+                                                    <img src="images/Rectangle-3.png" alt="Image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item_caption">
+                                            <div class="item_name">
+                                                <a class="conn_anim" href="#" title="">Chính chủ bán 3000m gần hồ Đồng Đò, đất 2 mặt đường nhìn suối, xung quanh nhà vườn nghỉ dưỡng</a>
+                                            </div>
+                                            <div class="item_location conn_grid conn_text conn_up">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                    <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0" />
+                                                    <path d="M9,16.485,4.757,12.243a6,6,0,1,1,8.485,0ZM12.3,11.3a4.667,4.667,0,1,0-6.6,0L9,14.6l3.3-3.3ZM9,9.333A1.333,1.333,0,1,1,10.333,8,1.333,1.333,0,0,1,9,9.333Z" transform="translate(-1 -1.333)" fill="#00c2af" />
+                                                </svg>
+                                                <span>Xã Minh Trí, Sóc Sơn, Hà Nội</span>
+                                            </div>
+                                            <div class="item_line"></div>
+                                            <div class="item_info">
+                                                <ul class="conn_ul">
+                                                    <li class="conn_grid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                            <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                            <path d="M14.333,3A.667.667,0,0,1,15,3.667V14.333a.667.667,0,0,1-.667.667H3.667A.667.667,0,0,1,3,14.333V3.667A.667.667,0,0,1,3.667,3ZM8.459,9.772,4.333,10.5v3.167H9.145L8.459,9.772Zm5.207-5.439H8.854L10.5,13.667h3.167Zm-6.167,0H4.333V9.145l3.895-.687Z" transform="translate(-1 -1)" fill="#292c32" />
+                                                        </svg>
+                                                        <span>Trang trại, khu nghỉ dưỡng</span>
+                                                    </li>
+                                                    <li class="conn_grid">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                            <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                                            <path d="M6,6v5.333h5.333V6ZM4.667,4.667h8v8h-8ZM4.667,2H6V4H4.667Zm0,11.333H6v2H4.667ZM2,4.667H4V6H2Zm0,6.667H4v1.333H2ZM13.333,4.667h2V6h-2Zm0,6.667h2v1.333h-2ZM11.333,2h1.333V4H11.333Zm0,11.333h1.333v2H11.333Z" transform="translate(-0.667 -0.667)" fill="#292c32" />
+                                                        </svg>
+                                                        <span>3000m2</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="item_line"></div>
+                                            <div class="item_bottom conn_flex">
+                                                <div class="item_price conn_text">
+                                                    <span>Giá</span> <strong>Thỏa thuận</strong>
+                                                </div>
+                                                <div class="conn_sicon tooltipMarking" aria-label="Bấm để lưu tin" data-microtip-position="bottom" role="tooltip">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                        <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                                        <path class="i_active" d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3Z" transform="translate(-0.667 -1)" fill="#00c2af" />
+                                                        <path d="M11.667,3a3.768,3.768,0,0,1,3.667,4c0,4.667-5,7.333-6.667,8.333C7,14.333,2,11.667,2,7A3.783,3.783,0,0,1,5.667,3a4.411,4.411,0,0,1,3,1.333A4.411,4.411,0,0,1,11.667,3ZM9.289,13.4A17.969,17.969,0,0,0,10.9,12.269C12.89,10.689,14,8.962,14,7a2.443,2.443,0,0,0-2.333-2.667,3.072,3.072,0,0,0-2.057.943l-.943.943-.943-.943a3.072,3.072,0,0,0-2.057-.943A2.459,2.459,0,0,0,3.333,7c0,1.963,1.111,3.689,3.1,5.269A17.939,17.939,0,0,0,8.044,13.4c.2.126.4.247.623.381.226-.135.423-.255.623-.381Z" transform="translate(-0.667 -1)" fill="#4a5264" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
