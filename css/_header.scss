@@ -489,6 +489,7 @@
  			.mobile_top{
  				padding: 13px 15px;
  				position: relative;
+ 				z-index: 1;
  				.logo{
  					img{
  						height: 30px;
@@ -506,6 +507,8 @@
  					padding: 8px 0;
  					.action{
  						position: relative;
+ 						width: 40px;
+ 						height: 40px;
  					}
  				}
  				.hambuger{
@@ -609,6 +612,8 @@
  				}
  				.menu_pin{
  					padding: 16px;
+ 					position: relative;
+ 					z-index: 999;
  					a{ 						
 	 					display: block;
 						line-height: 40px;

@@ -43,33 +43,35 @@ jQuery(document).ready(function($) {
         });
     }
 
-    var galleryTop = new Swiper('.gallery-top', {
-        slidesPerView: 1,  
-        loop: true,
-        loopedSlides: 50,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-        direction: 'vertical',
-        slideToClickedSlide: true,
-        spaceBetween: 16,
-        loopedSlides: 50,
-        loop: true,
-        slidesPerView: 5,
-        breakpoints: {
-            500: {
-                slidesPerView: 5,
+    if(jQuery('.gallery-top').length > 0 && jQuery('.gallery-thumbs').length > 0) {
+        var galleryTop = new Swiper('.gallery-top', {
+            slidesPerView: 1,  
+            loop: true,
+            loopedSlides: 50,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
-            1024: {
-                slidesPerView: 7,
+        });
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            direction: 'vertical',
+            slideToClickedSlide: true,
+            spaceBetween: 16,
+            loopedSlides: 50,
+            loop: true,
+            slidesPerView: 5,
+            breakpoints: {
+                500: {
+                    slidesPerView: 5,
+                },
+                1024: {
+                    slidesPerView: 7,
+                },
             },
-        },
-    });
-    galleryTop.controller.control = galleryThumbs;
-    galleryThumbs.controller.control = galleryTop;
+        });
+        galleryTop.controller.control = galleryThumbs;
+        galleryThumbs.controller.control = galleryTop;
+    }
 
 // Active Icon
     jQuery(document).on('click', '.conn_sicon, .conn_like', function(e) {
