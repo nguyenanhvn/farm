@@ -103,21 +103,18 @@ jQuery(document).ready(function($) {
     });
 
 // Menu
-    jQuery(document).on('click', '.header-scroll .logo_hambuger', function(event) {
-        /* Act on the event */
-        jQuery(this).find('.hamburger-box').toggleClass('active');
-        jQuery('.mobile_menu').toggleClass('open');
-    });
-    jQuery(document).on('click', '#header .action_menu', function(event) {
-        /* Act on the event */
-        jQuery(this).find('.hamburger-box').toggleClass('active');
-        jQuery('.mobile_menu').toggleClass('open');
+    jQuery(document).on('click', '.header-scroll .logo_hambuger, #header .header-menu .menu_hambuger', function(event) {
+        jQuery('#header').toggleClass('open');
         jQuery('body').toggleClass('none-scroll');
     });
-    jQuery(document).on('click', '.mobile_dark', function(event) {
-        /* Act on the event */
-        jQuery('.mobile_menu').toggleClass('open');
-        jQuery('#header .hamburger-box').toggleClass('active');
+    jQuery(document).on('click', '#header .action_menu', function(event) {
+        jQuery(this).find('.hamburger-box').toggleClass('active');
+        jQuery('#header').toggleClass('open');
+        jQuery('body').toggleClass('none-scroll');
+    });
+    jQuery(document).on('click', '.header-dark', function(event) {
+        jQuery('#header').removeClass('open');
+        jQuery('#header .header-scroll .hamburger-box').removeClass('active');
         jQuery('body').toggleClass('none-scroll');
     });
 

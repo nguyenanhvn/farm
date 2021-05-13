@@ -74,8 +74,8 @@
                     </div>
                     <div class="bottom_menu">
                         <ul class="conn_ul conn_flex__center">
-                            <li>
-                                <a href="#" title="" class="active">Bất động sản bán</a>
+                            <li class="active">
+                                <a href="#" title="">Bất động sản bán</a>
                             </li>
                             <li>
                                 <a href="#" title="">Bất động sản cho thuê</a>
@@ -119,14 +119,14 @@
                         <a class="logo_img" href="#" title="">
                             <img src="images/logo-scroll.svg" alt="Logo">
                         </a>
-                        <!-- <div class="logo_hambuger conn_flex">
+                        <div class="logo_hambuger conn_flex">
                             <div class="hambuger">
                                 <span class="hamburger-box">
                                     <span class="hamburger-inner"></span>
                                 </span>
                             </div>
                             <span class="conn_up conn_text">Danh mục</span>
-                        </div> -->
+                        </div>
                     </div>
                     <div class="scroll_filter">
                         <form action="" method="get" accept-charset="utf-8">
@@ -226,15 +226,24 @@
             </div>
         </div>
         <div class="header-mobile">
-            <div class="mobile_top">
+            <div class="mobile_top conn_grid">
                 <a href="/" class="logo">
                     <img src="images/logo-scroll.svg" alt="Logo">
                 </a>
+                <div class="filter conn_grid">
+                    <div class="filter__text">Tìm kiếm</div>
+                    <div class="filter__btn conn_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#fff" opacity="0" />
+                            <path d="M11,2a9,9,0,1,1-9,9A9,9,0,0,1,11,2Zm0,16a7,7,0,1,0-7-7A7,7,0,0,0,11,18Zm8.485.071L22.314,20.9,20.9,22.314l-2.828-2.829,1.414-1.414Z" fill="#fff" />
+                        </svg>
+                    </div>
+                </div>
                 <div class="actions conn_grid">
-                    <a href="#" class="action">
-                        <svg class="conn_pcenter" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M0,0H24V24H0Z" fill="#4a5264" opacity="0"></path>
-                            <path d="M12,17a10.68,10.68,0,0,1,8.607,3.925l-1.842.871A8.867,8.867,0,0,0,12,19a8.867,8.867,0,0,0-6.765,2.8l-1.841-.872A10.677,10.677,0,0,1,12,17ZM12,2a5,5,0,0,1,5,5v3a5,5,0,0,1-4.783,4.995L12,15a5,5,0,0,1-5-5V7a5,5,0,0,1,4.783-4.995Zm0,2A3,3,0,0,0,9,6.824L9,7v3a3,3,0,0,0,5.995.176L15,10V7a3,3,0,0,0-3-3Z" fill="#4a5264"></path>
+                    <a href="#" class="action conn_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#4a5264" opacity="0" />
+                            <path d="M16.5,3C19.538,3,22,5.5,22,9c0,7-7.5,11-10,12.5C9.5,20,2,16,2,9A5.675,5.675,0,0,1,7.5,3,6.617,6.617,0,0,1,12,5,6.617,6.617,0,0,1,16.5,3ZM12.934,18.6a26.953,26.953,0,0,0,2.42-1.7C18.335,14.533,20,11.943,20,9c0-2.36-1.537-4-3.5-4a4.608,4.608,0,0,0-3.086,1.414L12,7.828,10.586,6.414A4.608,4.608,0,0,0,7.5,5C5.56,5,4,6.656,4,9c0,2.944,1.666,5.533,4.645,7.9a26.908,26.908,0,0,0,2.421,1.7c.3.189.6.37.934.572.339-.2.635-.383.934-.571Z" fill="#4a5264" />
                         </svg>
                     </a>
                     <div class="action action_menu">
@@ -246,83 +255,82 @@
                     </div>
                 </div>
             </div>
-            <div class="mobile_menu">
-                <div class="menu_pin">
-                    <a class="conn_anim">
+        </div>
+        <div class="header-menu">
+            <div class="menu_hambuger">
+                <div class="hambuger">
+                    <span class="hamburger-box active">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="menu_top">
+                <div class="menu_user conn_p16">
+                    <div class="user__btn conn_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                            <path d="M12,17a10.68,10.68,0,0,1,8.607,3.925l-1.842.871A8.867,8.867,0,0,0,12,19a8.867,8.867,0,0,0-6.765,2.8l-1.841-.872A10.677,10.677,0,0,1,12,17ZM12,2a5,5,0,0,1,5,5v3a5,5,0,0,1-4.783,4.995L12,15a5,5,0,0,1-5-5V7a5,5,0,0,1,4.783-4.995Zm0,2A3,3,0,0,0,9,6.824L9,7v3a3,3,0,0,0,5.995.176L15,10V7a3,3,0,0,0-3-3Z" fill="#292c32" />
+                        </svg>
+                        <span>Đăng nhập / Đăng ký</span>
+                    </div>
+                </div>
+                <div class="menu_menus">
+                    <ul class="conn_ul">
+                        <li class="active"><a href="#" title="">Bất động sản bán</a></li>
+                        <li><a href="#" title="">Bất động sản cho thuê</a></li>
+                        <li><a href="#" title="">Tin tức</a></li>
+                        <li><a href="#" title="">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu_bottom">
+                <div class="menu_pin conn_p16">
+                    <a class="pin__btn conn_ibutton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#fff" opacity="0"></path>
+                            <path d="M13.828,1.686l8.486,8.486L20.9,11.586l-.707-.707L15.95,15.121l-.707,3.536-1.415,1.414L9.586,15.828l-4.95,4.95L3.222,19.364l4.95-4.95L3.929,10.172,5.343,8.757,8.88,8.05l4.242-4.242L12.415,3.1l1.414-1.415Zm.708,3.536L9.865,9.892l-2.822.565,6.5,6.5.564-2.822,4.671-4.67L14.536,5.222Z" fill="#fff"></path>
+                        </svg>
                         <span>Đăng tin</span>
                     </a>
                 </div>
-                <ul class="conn_ul menu_list conn_grid">
-                    <li>
-                        <a href="#" title="">
-                            <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path d="M0,0H24V24H0Z" fill="#4a5264" opacity="0"></path>
-                                    <path d="M16.5,3C19.538,3,22,5.5,22,9c0,7-7.5,11-10,12.5C9.5,20,2,16,2,9A5.675,5.675,0,0,1,7.5,3,6.617,6.617,0,0,1,12,5,6.617,6.617,0,0,1,16.5,3ZM12.934,18.6a26.953,26.953,0,0,0,2.42-1.7C18.335,14.533,20,11.943,20,9c0-2.36-1.537-4-3.5-4a4.608,4.608,0,0,0-3.086,1.414L12,7.828,10.586,6.414A4.608,4.608,0,0,0,7.5,5C5.56,5,4,6.656,4,9c0,2.944,1.666,5.533,4.645,7.9a26.908,26.908,0,0,0,2.421,1.7c.3.189.6.37.934.572.339-.2.635-.383.934-.571Z" fill="#4a5264"></path>
-                                </svg>
-                            </div>
-                            <span class="text">Tin đã lưu</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="">
-                            <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
-                                    <path d="M19,21H5a1,1,0,0,1-1-1V11H1L11.327,1.612a1,1,0,0,1,1.346,0L23,11H20v9A1,1,0,0,1,19,21Zm-6-2h5V9.157L12,3.7,6,9.157V19h5V13h2Z" fill="#292c32" />
-                                </svg>
-                            </div>
-                            <span class="text">Trang chủ</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="#" title="">
-                            <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
-                                    <path d="M3,19V5.7a1,1,0,0,1,.658-.94l9.671-3.516a.5.5,0,0,1,.671.47V6.667l6.316,2.1A1,1,0,0,1,21,9.721V19h2v2H1V19Zm2,0h7V3.855L5,6.4Zm14,0V10.442L14,8.775V19Z" fill="#292c32" />
-                                </svg>
-                            </div>
-                            <span class="text">Bất động sản bán</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="">
-                            <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
-                                    <path d="M21,21H3a1,1,0,0,1-1-1V12.487a1,1,0,0,1,.343-.754L6,8.544V4A1,1,0,0,1,7,3H21a1,1,0,0,1,1,1V20A1,1,0,0,1,21,21ZM9,19h3V12.942L8,9.454,4,12.942V19H7V15H9Zm5,0h6V5H8V7.127a.994.994,0,0,1,.657.247l5,4.359a1,1,0,0,1,.343.754Zm2-8h2v2H16Zm0,4h2v2H16Zm0-8h2V9H16ZM12,7h2V9H12Z" fill="#292c32" />
-                                </svg>
-                            </div>
-                            <span class="text">Bất động sản cho thuê</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="">
-                            <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
-                                    <path d="M3,18.5V5A3,3,0,0,1,6,2H20a1,1,0,0,1,1,1V21a1,1,0,0,1-1,1H6.5A3.5,3.5,0,0,1,3,18.5ZM19,20V17H6.5a1.5,1.5,0,0,0,0,3ZM10,4H6A1,1,0,0,0,5,5V15.337A3.486,3.486,0,0,1,6.5,15H19V4H17v8l-3.5-2L10,12Z" fill="#292c32" />
-                                </svg>
-                            </div>
-                            <span class="text">Tin tức</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="">
-                            <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                    <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
-                                    <path d="M2.243,6.854,11.49,1.31a1,1,0,0,1,1.029,0l9.238,5.545A.5.5,0,0,1,22,7.284V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V7.283a.5.5,0,0,1,.243-.429ZM4,8.133V19H20V8.132l-8-4.8-8,4.8ZM12.06,13.7l5.3-4.463,1.288,1.53L12.074,16.3l-6.71-5.53L6.636,9.228,12.06,13.7Z" fill="#292c32" />
-                                </svg>
-                            </div>
-                            <span class="text">Liên hệ</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="conn_ul menu_contacts conn_grid">
+                    <div class="item conn_flex">
+                        <div class="item_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0"></path>
+                                <path id="call" d="M7.244,8.121a7.037,7.037,0,0,0,2.635,2.635l.589-.825a.667.667,0,0,1,.863-.2,7.615,7.615,0,0,0,3.055.909.667.667,0,0,1,.614.665v2.975a.667.667,0,0,1-.6.663A10.339,10.339,0,0,1,3.055,3.6.667.667,0,0,1,3.718,3H6.693a.667.667,0,0,1,.665.614,7.615,7.615,0,0,0,.909,3.055.667.667,0,0,1-.2.863l-.825.589ZM5.563,7.683l1.267-.9A8.94,8.94,0,0,1,6.1,4.333H4.34c0,.111-.006.222-.006.333a9,9,0,0,0,9,9c.111,0,.223,0,.333-.007V11.9a8.94,8.94,0,0,1-2.445-.731l-.9,1.267a8.3,8.3,0,0,1-1.059-.5l-.039-.022A8.371,8.371,0,0,1,6.085,8.781l-.022-.039a8.3,8.3,0,0,1-.5-1.059Z" transform="translate(-1 -1)" fill="#00c2af"></path>
+                            </svg>
+                        </div>
+                        <div class="item_content">
+                            <a href="#" title="">(024) 3562 5939</a> / <a href="#" title="">(024) 3562 5940</a>
+                        </div>
+                    </div>
+                    <div class="item conn_flex">
+                        <div class="item_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0"></path>
+                                <path id="email" d="M2.162,4.958l6.165-3.7a.667.667,0,0,1,.686,0l6.159,3.7a.333.333,0,0,1,.162.286v8.477a.667.667,0,0,1-.667.667h-12A.667.667,0,0,1,2,13.722V5.244a.333.333,0,0,1,.162-.286Zm1.171.853v7.245H14V5.81L8.669,2.61,3.333,5.81Zm5.373,3.71,3.531-2.975.859,1.02-4.38,3.691L4.243,7.57l.848-1.029Z" transform="translate(-0.667 -0.389)" fill="#00c2af"></path>
+                            </svg>
+                        </div>
+                        <div class="item_content">
+                            <a href="#" title="">hotro@farmland.vn</a>
+                        </div>
+                    </div>
+                    <div class="item conn_flex">
+                        <div class="item_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M0,0H16V16H0Z" fill="#00c2af" opacity="0"></path>
+                                <path d="M3,13V4A2,2,0,0,1,5,2h9.333A.667.667,0,0,1,15,2.667v12a.667.667,0,0,1-.667.667h-9A2.333,2.333,0,0,1,3,13Zm10.667,1V12H5.333a1,1,0,0,0,0,2Zm-6-10.667H5A.667.667,0,0,0,4.333,4v6.891a2.324,2.324,0,0,1,1-.225h8.333V3.333H12.333V8.667L10,7.333,7.667,8.667Z" transform="translate(-1 -0.667)" fill="#00c2af"></path>
+                            </svg>
+                        </div>
+                        <div class="item_content">
+                            <a href="#" title="">Câu hỏi thường gặp</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mobile_dark"></div>
         </div>
+        <div class="header-dark"></div>
     </header><!-- /Header -->
     <!-- Content -->
     <main id="content">

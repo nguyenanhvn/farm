@@ -56,6 +56,10 @@
 		max-width: 100%;
 	}
 
+    section{
+        overflow: hidden;
+    }
+
 	@media (min-width: 1201px){
 		.container{
 			width: 1230px;
@@ -289,6 +293,10 @@
 
     .conn_up{
         text-transform: uppercase;
+    }
+
+    .conn_p16{
+        padding: 16px;
     }
 
     .conn_ani{
