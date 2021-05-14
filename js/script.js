@@ -118,10 +118,24 @@ jQuery(document).ready(function($) {
         jQuery('body').toggleClass('none-scroll');
     });
 
+// Search Mobile
+    jQuery(document).on('click', '.header-mobile .filter', function(){
+        jQuery('.header-mfilter').addClass('open');
+    });
+    jQuery(document).on('click', '.header-mfilter .mfilter_close', function(){
+        jQuery('.header-mfilter').removeClass('open');
+    });
+
 // Tabs
     jQuery(document).on('click', '.form__tabs li', function() {
         if(!jQuery(this).hasClass('tab_active')){            
             jQuery('.form__tabs li').removeClass('tab_active');
+            jQuery(this).addClass('tab_active');
+        }
+    });
+    jQuery(document).on('click', '.mfilter_tabs li', function() {
+        if(!jQuery(this).hasClass('tab_active')){            
+            jQuery('.mfilter_tabs li').removeClass('tab_active');
             jQuery(this).addClass('tab_active');
         }
     });
