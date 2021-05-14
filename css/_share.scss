@@ -385,6 +385,127 @@
         }
     }
 
+    .conn_navigation{
+        display: grid;
+        margin: 24px auto;
+        grid-template-columns: repeat(auto-fit, minmax(32px, 1fr));
+        width: 272px;
+        grid-gap: 8px;
+        .navi{
+            width: 32px;
+            line-height: 32px;
+            text-align: center;
+            position: relative;
+            @include transition;
+            color: $color-text;
+            border-radius: 4px;
+            &:hover,
+            &.navi_active{
+                background: $color;
+                color: #fff;
+                svg path{
+                    fill: #fff;
+                }
+            }
+            svg{
+                pointer-events: none;
+                path{
+                    @include transition;
+                }
+            }
+        }
+    }
+    .conn_bdropdown{
+        position: relative;
+        &.open{
+            .bdropdown__options{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .bdropdown__current{
+            line-height: 32px;
+            border-radius: 4px;
+            background: transparent;
+            padding: 0 12px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            pointer-events: auto;
+            svg{
+                margin-right: 4px;
+                position: relative;
+                top: -2px;
+            }
+            svg, span{
+                pointer-events: none;
+            }
+            @media (max-width: 450px){
+                span{
+                    display: none;
+                }
+            }
+        }
+        .bdropdown__options{
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 40px;
+            right: -1px;
+            background: #fff;
+            z-index: 99;
+            border-radius: 4px;
+            box-shadow: 0px 1px 8px rgba(#252A31, 0.16);
+            padding: 4px 0;
+            min-width: 200px;
+            ul{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                max-height: 240px;
+                overflow: auto;
+                li{
+                    padding: 12px 12px 9px;
+                    color: #252A31;
+                    line-height: 19px;
+                    position: relative;
+                    &:hover{
+                        background: #E9F7F5;
+                    }
+                    &.current{
+                        background: #E9F7F5;
+                        color: #00C2AF;
+                        &:after{
+                            content: '';
+                            background: url(../images/icon-tick.svg) center /cover;
+                            width: 16px;
+                            height: 16px;
+                            position: absolute;
+                            top: 12px;
+                            right: 12px;
+                        }
+                        svg path{
+                            fill: #00C2AF;
+                        }
+                    }
+                    .li_icon{
+                        position: absolute;
+                        top: 10px;
+                        left: 12px;
+                        svg{
+                            width: 16px;
+                            height: auto;
+                        }
+                    }
+                    .li_icon,
+                    .li_text{
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+
 /**
  * Tooltip
  */

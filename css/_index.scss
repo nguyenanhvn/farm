@@ -24,6 +24,11 @@
  		@media (max-width: 992px){
  			display: none;
  		}
+ 		&.breadcrumb_small{
+ 			.container{
+ 				max-width: 792px;
+ 			}
+ 		}
  		.content_box{
  			font-size: 12px;
  			line-height: 14px;
@@ -1273,6 +1278,34 @@
  			}
  			@media (max-width: 1200px){
  				margin-top: 30px;
+ 			}
+ 		}
+ 	}
+
+/**
+ * Policy
+ */
+ 	section.content-policy{
+ 		padding: 52px 0;
+ 		background: #fff;
+ 		.container{
+ 			max-width: 792px;
+ 		}
+ 		.content_box{
+ 			grid-row-gap: 24px;
+ 			.box_content{
+	 			grid-row-gap: 24px;
+	 			font-size: 16px;
+	 			line-height: 24px;
+	 			color: $color-text;
+	 			letter-spacing: -0.2px;
+ 				@media (max-width: 450px){
+ 					font-size: 15px;
+ 					line-height: 1.5;
+ 				}
+ 				*{
+ 					margin: 0;
+ 				}
  			}
  		}
  	}

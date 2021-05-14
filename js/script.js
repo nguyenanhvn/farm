@@ -158,7 +158,6 @@ jQuery(document).ready(function($) {
         jQuery(this).addClass('current');
     });
 
-
     jQuery(document).on('click', '.dropdown_current', function() {
         jQuery(this).parent().addClass('open');
         jQuery('.option').removeClass('open');
@@ -171,6 +170,18 @@ jQuery(document).ready(function($) {
         jQuery(this).closest('.control_dropdown').find('ul li').removeClass('current');
         jQuery(this).addClass('current');
         jQuery('.dropdown_current .icon__left').html(jQuery(this).find('.li_icon').html());
+    });
+
+    jQuery(document).on('click', '.bdropdown__current', function() {
+        jQuery(this).parent().addClass('open');
+        jQuery('.option').removeClass('open');
+    });
+
+    jQuery(document).on('click', '.bdropdown__options ul li', function() {
+        jQuery(this).closest('.conn_bdropdown').find('.bdropdown__current span').text(jQuery(this).text());
+        jQuery(this).closest('.conn_bdropdown').removeClass('open');
+        jQuery(this).closest('.conn_bdropdown').find('ul li').removeClass('current');
+        jQuery(this).addClass('current');
     });
 
 // Handle Body
@@ -205,6 +216,21 @@ jQuery(document).ready(function($) {
                 jQuery('.phone__msg').fadeOut(300);
             }, 2000);
         }
+    });
+
+// Filter Listing
+    jQuery(document).on('click', '.content-blisting .child .child_title', function(){
+        jQuery(this).parent().find('.child_content').slideToggle(300);
+        jQuery(this).parent().toggleClass('open');
+    });
+    jQuery(document).on('click', '.list__radio .iradio .iradio_box', function(){
+        if(!jQuery(this).hasClass('open')){
+            jQuery(this).closest('.list__radio').find('.list__checkbox').slideUp(300)
+            jQuery(this).parent().find('.list__checkbox').slideDown(300);
+            jQuery(this).closest('.list__radio').find('.iradio_box').removeClass('open');
+            jQuery(this).addClass('open');
+        }
+        
     });
 });
 
