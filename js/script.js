@@ -121,9 +121,11 @@ jQuery(document).ready(function($) {
 // Search Mobile
     jQuery(document).on('click', '.header-mobile .filter', function(){
         jQuery('.header-mfilter').addClass('open');
+        jQuery('body').addClass('none-scroll');
     });
     jQuery(document).on('click', '.header-mfilter .mfilter_close', function(){
         jQuery('.header-mfilter').removeClass('open');
+        jQuery('body').removeClass('none-scroll');
     });
 
 // Tabs
