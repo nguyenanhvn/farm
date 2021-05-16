@@ -299,6 +299,10 @@
         padding: 16px;
     }
 
+    .conn_mb16{
+        margin-bottom: 16px;
+    }
+
     .conn_ani{
 	    opacity: 0;
 	    transform: translateY(3rem);
@@ -415,6 +419,7 @@
             }
         }
     }
+
     .conn_bdropdown{
         position: relative;
         &.open{

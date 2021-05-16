@@ -74,7 +74,7 @@ jQuery(document).ready(function($) {
     }
 
 // Active Icon
-    jQuery(document).on('click', '.conn_sicon, .conn_like', function(e) {
+    jQuery(document).on('click', '.conn_sicon.tooltipMarking, .conn_like', function(e) {
         if(jQuery(this).hasClass('active')){
             jQuery(this).attr('aria-label', 'Bấm để lưu tin');
         } else {
@@ -232,6 +232,17 @@ jQuery(document).ready(function($) {
         }
         
     });
+
+// Show more filter
+    jQuery(document).on('click', '.list__more', function(){
+        if (jQuery(this).hasClass('active')) {
+            jQuery(this).find('span').text(jQuery(this).attr('data-default'));
+            jQuery(this).removeClass('active');
+        } else {
+            jQuery(this).find('span').text(jQuery(this).attr('data-less'));
+            jQuery(this).addClass('active');
+        }
+    });
 });
 
 function header() {
@@ -241,7 +252,13 @@ function header() {
         if (scroll > 200) {
             jQuery('#header').addClass('active');
             jQuery('#scroll').addClass('scroll');
+            jQuery('.content-flisting').addClass('active');
         } else {
+            if(scroll > 190) {
+                jQuery('.content-flisting').addClass('active');
+            } else {                
+                jQuery('.content-flisting').removeClass('active');
+            }
             jQuery('#header').removeClass('active');
             jQuery('#scroll').removeClass('scroll');
         }

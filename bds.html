@@ -451,6 +451,147 @@
                 </div>
             </div>
         </section> <!-- /Breadcrumb -->
+        <!-- Filter Listing -->
+        <section class="content-flisting">
+            <div class="container">
+                <div class="content_box conn_grid">
+                    <div class="box_left conn_grid">
+                        <ul class="conn_ul box_tabs conn_grid">
+                            <li class="tab_active">Bán</li>
+                            <li>Cho thuê</li>
+                        </ul>
+                        <div class="box_input conn_relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0"></path>
+                                <path d="M8,2A6,6,0,1,1,2,8,6,6,0,0,1,8,2ZM8,12.667A4.667,4.667,0,1,0,3.333,8,4.666,4.666,0,0,0,8,12.667Zm5.657.047L15.543,14.6l-.943.943-1.885-1.886.943-.943Z" transform="translate(-0.667 -0.667)" fill="#4a5264"></path>
+                            </svg>
+                            <input type="text" name="" placeholder="Tìm kiếm">
+                        </div>
+                    </div>
+                    <div class="box_middle">
+                        <div class="filter__options conn_grid">
+                            <div class="option conn_relative option_type">
+                                <div class="option_current has_value">
+                                    <span>Loại nhà đất</span>
+                                    <svg class="icon__right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0"></path>
+                                        <path d="M12,13.172l4.95-4.95,1.414,1.414L12,16,5.636,9.636,7.05,8.222Z" fill="#292c32"></path>
+                                    </svg>
+                                </div>
+                                <div class="option_dropdown">
+                                    <ul>
+                                        <li>Đất, đất nền, đất dự án</li>
+                                        <li>Trang trại, khu nghỉ dưỡng</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="option conn_relative option_city">
+                                <div class="option_current has_value">
+                                    <span>Thành phố</span>
+                                    <svg class="icon__right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0"></path>
+                                        <path d="M12,13.172l4.95-4.95,1.414,1.414L12,16,5.636,9.636,7.05,8.222Z" fill="#292c32"></path>
+                                    </svg>
+                                </div>
+                                <div class="option_dropdown">
+                                    <ul>
+                                        <li vl="CN">Tất cả</li>
+                                        <li vl="SG">Hồ Chí Minh</li>
+                                        <li vl="HN">Hà Nội</li>
+                                        <li vl="DDN">Đà Nẵng</li>
+                                        <li vl="BD">Bình Dương</li>
+                                        <li vl="DNA">Đồng Nai</li>
+                                        <li vl="KH">Khánh Hòa</li>
+                                        <li vl="HP">Hải Phòng</li>
+                                        <li vl="LA">Long An</li>
+                                        <li vl="QNA">Quảng Nam</li>
+                                        <li vl="VT">Bà Rịa Vũng Tàu</li>
+                                        <li vl="DDL">Đắk Lắk</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="option conn_relative option_district">
+                                <div class="option_current">
+                                    <span>Quận/huyện</span>
+                                    <svg class="icon__right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0"></path>
+                                        <path d="M12,13.172l4.95-4.95,1.414,1.414L12,16,5.636,9.636,7.05,8.222Z" fill="#292c32"></path>
+                                    </svg>
+                                </div>
+                                <div class="option_dropdown">
+                                    <ul>
+                                        <li vl="CN">Tất cả</li>
+                                        <li vl="1">Hoàn Kiếm</li>
+                                        <li vl="2">Ba Đình</li>
+                                        <li vl="3">Đống Đa</li>
+                                        <li vl="4">Hai Bà Trưng</li>
+                                        <li vl="5">Thanh Xuân</li>
+                                        <li vl="6">Tây Hồ</li>
+                                        <li vl="7">Cầu Giấy</li>
+                                        <li vl="8">Hoàng Mai</li>
+                                        <li vl="9">Long Biên</li>
+                                        <li vl="10">Đông Anh</li>
+                                        <li vl="11">Gia Lâm</li>
+                                        <li vl="12">Sóc Sơn</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="option conn_relative option_price">
+                                <div class="option_current">                                    
+                                    <span>Khoảng giá</span>
+                                    <svg class="icon__right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0"></path>
+                                        <path d="M12,13.172l4.95-4.95,1.414,1.414L12,16,5.636,9.636,7.05,8.222Z" fill="#292c32"></path>
+                                    </svg>
+                                </div>
+                                <div class="option_dropdown">
+                                    <ul>
+                                        <li vl="1">Tất cả</li>
+                                        <li vl="2">Dưới 500 triệu</li>
+                                        <li vl="3">500 triệu - 1 tỷ</li>
+                                        <li vl="4">1 - 2 tỷ</li>
+                                        <li vl="5">2 - 3 tỷ</li>
+                                        <li vl="5">3 - 5 tỷ</li>
+                                        <li vl="5">5 - 7 tỷ</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="option conn_relative option_acreage">
+                                <div class="option_current">
+                                    <span>Diện tích</span>
+                                    <svg class="icon__right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0"></path>
+                                        <path d="M12,13.172l4.95-4.95,1.414,1.414L12,16,5.636,9.636,7.05,8.222Z" fill="#292c32"></path>
+                                    </svg>
+                                </div>
+                                <div class="option_dropdown">
+                                    <ul>
+                                        <li vl="1">Tất cả</li>
+                                        <li vl="2">Dưới 30 m<sup>2</sup></li>
+                                        <li vl="3">30 - 50 m<sup>2</sup></li>
+                                        <li vl="3">50 - 80 m<sup>2</sup></li>
+                                        <li vl="3">80 - 100 m<sup>2</sup></li>
+                                        <li vl="3">100 - 150 m<sup>2</sup></li>
+                                        <li vl="3">150 - 200 m<sup>2</sup></li>
+                                        <li vl="3">200 - 300 m<sup>2</sup></li>
+                                        <li vl="3">Trên 300 m<sup>2</sup></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_right conn_grid">
+                        <button type="" class="button_search conn_anim">Tìm kiếm</button>
+                        <div class="button_reset conn_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                <path d="M12.689,11.745,15.542,14.6l-.943.943-2.853-2.854a6,6,0,0,1-9.123-2.022H6.667L5.8,12.115a4.672,4.672,0,0,0,5.453-.765l.1-.1a4.676,4.676,0,0,0,1.123-4.583h1.378a6.016,6.016,0,0,1-1.163,5.079Zm.688-6.412H9.333L10.2,3.885A4.67,4.67,0,0,0,3.527,9.333H2.149a6,6,0,0,1,11.228-4Z" transform="translate(-0.667 -0.667)" fill="#4a5264" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /Filter Listing -->
         <!-- BDS Listing -->
         <section class="content-blisting">
             <div class="container">
@@ -515,9 +656,25 @@
                                 </svg>
                             </div>
                             <div class="child_content">
+                                <div class="child_search conn_grid">
+                                    <div class="search__input conn_relative">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M0,0H16V16H0Z" fill="#4a5264" opacity="0" />
+                                            <path d="M8,2A6,6,0,1,1,2,8,6,6,0,0,1,8,2ZM8,12.667A4.667,4.667,0,1,0,3.333,8,4.666,4.666,0,0,0,8,12.667Zm5.657.047L15.543,14.6l-.943.943-1.885-1.886.943-.943Z" transform="translate(-0.667 -0.667)" fill="#4a5264" />
+                                        </svg>
+                                        <input type="text" name="" placeholder="Tìm kiếm">
+                                    </div>
+                                    <div class="search__reset tooltipMarking" aria-label="Reset thẻ" data-microtip-position="bottom" role="tooltip">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M0,0H16V16H0Z" fill="#292c32" opacity="0" />
+                                            <path d="M9.879,8.936l3.3-3.3.943.943-3.3,3.3,3.3,3.3-.943.943-3.3-3.3-3.3,3.3-.943-.943,3.3-3.3-3.3-3.3.943-.943Z" transform="translate(-1.879 -1.879)" fill="#292c32" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="conn_text conn_up conn_mb16">Tỉnh thành</div>
                                 <div class="list__radio conn_grid">
                                     <label class="iradio conn_grid">
-                                        <div class="iradio_box conn_grid">                                            
+                                        <div class="iradio_box conn_grid">
                                             <input type="radio" name="city">
                                             <div class="iradio_tick"></div>
                                             <div class="iradio_text">Tất cả</div>
@@ -525,7 +682,7 @@
                                         </div>
                                     </label>
                                     <label class="iradio conn_grid">
-                                        <div class="iradio_box conn_grid">        
+                                        <div class="iradio_box conn_grid">
                                             <input type="radio" name="city">
                                             <div class="iradio_tick"></div>
                                             <div class="iradio_text">Hà Nội</div>
@@ -568,7 +725,7 @@
                                         </div>
                                     </label>
                                     <label class="iradio conn_grid">
-                                        <div class="iradio_box conn_grid">                                            
+                                        <div class="iradio_box conn_grid">
                                             <input type="radio" name="city">
                                             <div class="iradio_tick"></div>
                                             <div class="iradio_text">HCM</div>
@@ -610,6 +767,9 @@
                                             </label>
                                         </div>
                                     </label>
+                                    <div class="list__more" data-default="Xem tất cả" data-less="Thu gọn">
+                                        <span>Xem tất cả</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
