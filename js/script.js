@@ -141,6 +141,12 @@ jQuery(document).ready(function($) {
             jQuery(this).addClass('tab_active');
         }
     });
+    jQuery(document).on('click', '.content-flisting .box_tabs li', function() {
+        if(!jQuery(this).hasClass('tab_active')){            
+            jQuery('.content-flisting .box_tabs li').removeClass('tab_active');
+            jQuery(this).addClass('tab_active');
+        }
+    });
 
 // Dropdown
     jQuery(document).on('click', '.option_current', function() {

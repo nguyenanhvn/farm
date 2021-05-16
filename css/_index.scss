@@ -117,6 +117,9 @@
 							.control_dropdown{
 								position: relative;
 								&.open{
+									.dropdown_current .icon__right{
+										transform: rotate(180deg);
+									}
 									.dropdown_options{
 										opacity: 1;
 										visibility: visible;
@@ -285,6 +288,9 @@
 							&.open{
 								.option_current{
 									border-radius: 3px 3px 0 0;
+									.icon__right{
+										transform: rotate(180deg);
+									}
 								}
 								.option_dropdown{
 									opacity: 1;
