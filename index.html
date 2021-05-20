@@ -16,6 +16,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.js"></script>
     <script src="js/script.js"></script>
 </head>
 
@@ -422,8 +423,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="mfilter_btn">                    
+            <div class="mfilter_btn">
                 <button class="conn_ibutton" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path id="boundingbox" d="M0,0H24V24H0Z" fill="#fff" opacity="0"></path>
@@ -2230,6 +2230,250 @@
             <path d="M13,7.828V20H11V7.828L5.636,13.192,4.222,11.778,12,4l7.778,7.778-1.414,1.414Z" fill="#fff" />
         </svg>
     </div>
+    <div id="login" class="lightbox conn_flex__center lightbox_show">
+        <div class="lightbox_box conn_grid">
+            <div class="lightbox_close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                    <path d="M12,10.586l4.95-4.95L18.364,7.05,13.414,12l4.95,4.95L16.95,18.364,12,13.414l-4.95,4.95L5.636,16.95,10.586,12,5.636,7.05,7.05,5.636Z" fill="#292c32" />
+                </svg>
+            </div>
+            <div class="lightbox_head conn_grid conn_center">
+                <div class="head__title conn_sheading">Đăng nhập</div>
+                <div class="head__text">
+                    Nhập số điện thoại để bắt đầu
+                </div>
+            </div>
+            <div class="lightbox_body conn_grid">
+                <div class="input_box">
+                    <!-- Add class "has_error" for error, class "has_success" for success, class "has_value" for have value -->
+                    <div class="box__form">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                            <path d="M2.243,6.854,11.49,1.31a1,1,0,0,1,1.029,0l9.238,5.545A.5.5,0,0,1,22,7.284V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V7.283a.5.5,0,0,1,.243-.429ZM4,8.133V19H20V8.132l-8-4.8-8,4.8ZM12.06,13.7l5.3-4.463,1.288,1.53L12.074,16.3l-6.71-5.53L6.636,9.228,12.06,13.7Z" fill="#4a5264" />
+                        </svg>
+                        <input type="email" name="" value="xxxx" placeholder="Nhập email">
+                    </div>
+                    <!-- <div class="box__error">Vui lòng nhập số điện thoại</div> -->
+                </div>
+                <div class="body__buttons conn_grid">
+                    <button type="button" class="button conn_mbutton">Tiếp tục</button>
+                </div>
+            </div>
+            <div class="lightbox_footer conn_center">
+                <div class="footer__note">Hoặc đăng nhập bằng</div>
+                <div class="footer__buttons conn_grid grid_2">
+                    <button type="button" class="button conn_gbutton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                            <g transform="translate(2 2)">
+                                <path d="M195,1053a10,10,0,1,0-11.563,9.878v-6.987H180.9V1053h2.539v-2.2a3.53,3.53,0,0,1,3.778-3.891,15.313,15.313,0,0,1,2.238.2v2.461h-1.261a1.445,1.445,0,0,0-1.63,1.561V1053h2.774l-.443,2.891h-2.331v6.987A10,10,0,0,0,195,1053Z" transform="translate(-175 -1043)" fill="#1877f2" />
+                                <path d="M188.893,1055.891l.443-2.891h-2.774v-1.876a1.445,1.445,0,0,1,1.63-1.561h1.261V1047.1a15.313,15.313,0,0,0-2.238-.2,3.53,3.53,0,0,0-3.778,3.891v2.2H180.9v2.891h2.539v6.987a10.071,10.071,0,0,0,3.125,0v-6.987Z" transform="translate(-175 -1043)" fill="#fff" />
+                            </g>
+                        </svg>
+                        <span>Facebook</span>
+                    </button>
+                    <button type="button" class="button conn_gbutton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                            <g transform="translate(-582.962 -339.885)">
+                                <path d="M603.762,351.294a11.432,11.432,0,0,0-.182-2.046h-9.418v3.869h5.382a4.6,4.6,0,0,1-2,3.018v2.509h3.231a9.753,9.753,0,0,0,2.982-7.35Zm0,0" transform="translate(1 0.818)" fill="#3e82f1" fill-rule="evenodd" />
+                                <path d="M595.056,360.7a9.544,9.544,0,0,0,6.618-2.423l-3.231-2.509a6.034,6.034,0,0,1-8.982-3.168h-3.341v2.59a10,10,0,0,0,8.937,5.51Zm0,0" transform="translate(0.106 1.19)" fill="#32a753" fill-rule="evenodd" />
+                                <path d="M589.566,353.234a5.917,5.917,0,0,1,0-3.8v-2.591h-3.341a10.013,10.013,0,0,0,0,8.981l3.341-2.59Zm0,0" transform="translate(0 0.551)" fill="#f9bb00" fill-rule="evenodd" />
+                                <path d="M595.056,345.862a5.4,5.4,0,0,1,3.823,1.5l2.868-2.868a9.608,9.608,0,0,0-6.691-2.6,10,10,0,0,0-8.937,5.509l3.341,2.591a5.96,5.96,0,0,1,5.6-4.123Zm0,0" transform="translate(0.106 0)" fill="#e74235" fill-rule="evenodd" />
+                            </g>
+                        </svg>
+                        <span>Google</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="login" class="lightbox conn_flex__center">
+        <div class="lightbox_box conn_grid">
+            <div class="lightbox_close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                    <path d="M12,10.586l4.95-4.95L18.364,7.05,13.414,12l4.95,4.95L16.95,18.364,12,13.414l-4.95,4.95L5.636,16.95,10.586,12,5.636,7.05,7.05,5.636Z" fill="#292c32" />
+                </svg>
+            </div>
+            <div class="lightbox_head conn_grid conn_center">
+                <div class="head__title conn_sheading">Thông tin cá nhân</div>
+                <div class="head__text">
+                    Vui lòng hoàn tất thông tin cá nhân bắt đầu sử dụng dịch vụ của chúng tôi
+                </div>
+            </div>
+            <div class="lightbox_body conn_grid">
+                <div class="input_box has_value">
+                    <!-- Add class "has_error" for error, class "has_success" for success, class "has_value" for have value -->
+                    <div class="box__form">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                            <path d="M2.243,6.854,11.49,1.31a1,1,0,0,1,1.029,0l9.238,5.545A.5.5,0,0,1,22,7.284V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V7.283a.5.5,0,0,1,.243-.429ZM4,8.133V19H20V8.132l-8-4.8-8,4.8ZM12.06,13.7l5.3-4.463,1.288,1.53L12.074,16.3l-6.71-5.53L6.636,9.228,12.06,13.7Z" fill="#4a5264" />
+                        </svg>
+                        <input type="email" name="" value="xxxx" placeholder="Nhập email">
+                    </div>
+                    <!-- <div class="box__error">Vui lòng nhập số điện thoại</div> -->
+                </div>
+                <div class="input_box">
+                    <!-- Add class "has_error" for error, class "has_success" for success, class "has_value" for have value -->
+                    <div class="box__form">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                            <path d="M12.917,13a6.005,6.005,0,1,1,0-2H23v2H21v4H19V13H17v4H15V13ZM7,16a4,4,0,1,0-4-4A4,4,0,0,0,7,16Z" fill="#4a5264" />
+                        </svg>
+                        <input type="password" name="" value="" placeholder="Nhập mật khẩu">
+                    </div>
+                    <!-- <div class="box__error">Vui lòng nhập mật khẩu</div> -->
+                </div>
+                <div class="body__forgot">
+                    <span class="conn_anim">Quên mật khẩu?</span>
+                </div>
+            </div>
+            <div class="lightbox_footer conn_center">
+                <div class="footer__buttons conn_grid grid_2">
+                    <button type="button" class="button conn_gbutton">
+                        <span>Quay lại</span>
+                    </button>
+                    <button type="button" class="button conn_mbutton">
+                        <span>Đăng nhập</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="login" class="lightbox conn_flex__center">
+        <div class="lightbox_box conn_grid">
+            <div class="lightbox_close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                    <path d="M12,10.586l4.95-4.95L18.364,7.05,13.414,12l4.95,4.95L16.95,18.364,12,13.414l-4.95,4.95L5.636,16.95,10.586,12,5.636,7.05,7.05,5.636Z" fill="#292c32" />
+                </svg>
+            </div>
+            <div class="lightbox_head conn_grid conn_center">
+                <div class="head__title conn_sheading">Đăng nhập</div>
+                <div class="head__text">
+                    Nhập số điện thoại để bắt đầu
+                </div>
+            </div>
+            <div class="lightbox_body conn_grid">
+                <div class="input_box">
+                    <!-- Add class "has_error" for error, class "has_success" for success, class "has_value" for have value -->
+                    <div class="box__form">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#4a5264" opacity="0" />
+                            <path d="M12,22A10,10,0,1,1,22,12,10,10,0,0,1,12,22Zm0-2a8,8,0,1,0-8-8A8,8,0,0,0,12,20ZM7,12H9a3,3,0,0,0,6,0h2A5,5,0,0,1,7,12Z" fill="#4a5264" />
+                        </svg>
+                        <input type="tel" name="" value="" placeholder="Họ và tên">
+                    </div>
+                    <!-- <div class="box__error">Vui lòng nhập số điện thoại</div> -->
+                </div>
+                <div class="input_box">
+                    <!-- Add class "has_error" for error, class "has_success" for success, class "has_value" for have value -->
+                    <div class="box__form">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#4a5264" opacity="0" />
+                            <path d="M7,4V20H17V4ZM6,2H18a1,1,0,0,1,1,1V21a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V3A1,1,0,0,1,6,2Zm6,15a1,1,0,1,1-1,1A1,1,0,0,1,12,17Z" fill="#4a5264" />
+                        </svg>
+                        <input type="tel" name="" value="" placeholder="Nhập số điện thoại">
+                    </div>
+                    <!-- <div class="box__error">Vui lòng nhập số điện thoại</div> -->
+                </div>
+                <div class="input_box">
+                    <!-- Add class "has_error" for error, class "has_success" for success, class "has_value" for have value -->
+                    <div class="box__form">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                            <path d="M17,3h4a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3H7V1H9V3h6V1h2ZM15,5H9V7H7V5H4V9H20V5H17V7H15Zm5,6H4v8H20Z" fill="#4a5264" />
+                        </svg>
+                        <input id="date" type="text" name="" value="" placeholder="Ngày sinh" data-inputmask="'alias': 'date'">
+                    </div>
+                    <!-- <div class="box__error">Vui lòng nhập mật khẩu</div> -->
+                </div>
+                <div class="check_box conn_flex">
+                    <div class="check_label">Giới tính</div>
+                    <div class="check_list conn_flex">
+                        <label class="check_item conn_flex">
+                            <input type="radio" name="gender" value="Nam">
+                            <div class="check_tick"></div>
+                            <span>Nam</span>
+                        </label>
+                        <label class="check_item conn_flex">
+                            <input type="radio" name="gender" value="Nữ">
+                            <div class="check_tick"></div>
+                            <span>Nữ</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbox_footer conn_center">
+                <div class="footer__buttons conn_grid grid_2">
+                    <button type="button" class="button conn_gbutton">
+                        <span>Quay lại</span>
+                    </button>
+                    <button type="button" class="button conn_mbutton">
+                        <span>Tiếp tục</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="login" class="lightbox conn_flex__center">
+        <div class="lightbox_box conn_grid">
+            <div class="lightbox_close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                    <path d="M12,10.586l4.95-4.95L18.364,7.05,13.414,12l4.95,4.95L16.95,18.364,12,13.414l-4.95,4.95L5.636,16.95,10.586,12,5.636,7.05,7.05,5.636Z" fill="#292c32" />
+                </svg>
+            </div>
+            <div class="lightbox_head conn_grid conn_center">
+                <div class="head__title conn_sheading">Thiết lập mật khẩu</div>
+                <div class="head__text">
+                    Thiết lập mật khẩu cho các lần đăng nhập sau
+                </div>
+            </div>
+            <div class="lightbox_body conn_grid">
+                <div class="input_box">
+                    <!-- Add class "has_error" for error, class "has_success" for success, class "has_value" for have value -->
+                    <div class="box__form">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                            <path d="M12.917,13a6.005,6.005,0,1,1,0-2H23v2H21v4H19V13H17v4H15V13ZM7,16a4,4,0,1,0-4-4A4,4,0,0,0,7,16Z" fill="#4a5264" />
+                        </svg>
+                        <input type="password" name="" value="" placeholder="Nhập mật khẩu">
+                    </div>
+                    <!-- <div class="box__error">Vui lòng nhập mật khẩu</div> -->
+                </div>
+                <div class="input_box">
+                    <!-- Add class "has_error" for error, class "has_success" for success, class "has_value" for have value -->
+                    <div class="box__form">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0,0H24V24H0Z" fill="#292c32" opacity="0" />
+                            <path d="M12.917,13a6.005,6.005,0,1,1,0-2H23v2H21v4H19V13H17v4H15V13ZM7,16a4,4,0,1,0-4-4A4,4,0,0,0,7,16Z" fill="#4a5264" />
+                        </svg>
+                        <input type="password" name="" value="" placeholder="Nhập lại mật khẩu">
+                    </div>
+                    <!-- <div class="box__error">Vui lòng nhập mật khẩu</div> -->
+                </div>
+            </div>
+            <div class="lightbox_footer conn_center">
+                <div class="footer__buttons conn_grid grid_2">
+                    <button type="button" class="button conn_gbutton">
+                        <span>Quay lại</span>
+                    </button>
+                    <button type="button" class="button conn_mbutton">
+                        <span>Tiếp tục</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        jQuery(document).ready(function($) {
+            jQuery('#date').inputmask();
+        });
+    </script>
 </body>
 
 </html>

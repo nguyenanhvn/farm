@@ -105,27 +105,27 @@ jQuery(document).ready(function($) {
 // Menu
     jQuery(document).on('click', '.header-scroll .logo_hambuger, #header .header-menu .menu_hambuger', function(event) {
         jQuery('#header').toggleClass('open');
-        jQuery('body').toggleClass('none-scroll');
+        // jQuery('body').toggleClass('none-scroll');
     });
     jQuery(document).on('click', '#header .action_menu', function(event) {
         jQuery(this).find('.hamburger-box').toggleClass('active');
         jQuery('#header').toggleClass('open');
-        jQuery('body').toggleClass('none-scroll');
+        // jQuery('body').toggleClass('none-scroll');
     });
     jQuery(document).on('click', '.header-dark', function(event) {
         jQuery('#header').removeClass('open');
         jQuery('#header .header-scroll .hamburger-box').removeClass('active');
-        jQuery('body').toggleClass('none-scroll');
+        // jQuery('body').toggleClass('none-scroll');
     });
 
 // Search Mobile
     jQuery(document).on('click', '.header-mobile .filter', function(){
         jQuery('.header-mfilter').addClass('open');
-        jQuery('body').addClass('none-scroll');
+        // jQuery('body').addClass('none-scroll');
     });
     jQuery(document).on('click', '.header-mfilter .mfilter_close', function(){
         jQuery('.header-mfilter').removeClass('open');
-        jQuery('body').removeClass('none-scroll');
+        // jQuery('body').removeClass('none-scroll');
     });
 
 // Tabs
@@ -231,12 +231,11 @@ jQuery(document).ready(function($) {
     });
     jQuery(document).on('click', '.list__radio .iradio .iradio_box', function(){
         if(!jQuery(this).hasClass('open')){
-            jQuery(this).closest('.list__radio').find('.list__checkbox').slideUp(300)
-            jQuery(this).parent().find('.list__checkbox').slideDown(300);
+            jQuery(this).closest('.list__radio').find('.list__radio').slideUp(300)
+            jQuery(this).parent().find('.list__radio').slideDown(300);
             jQuery(this).closest('.list__radio').find('.iradio_box').removeClass('open');
             jQuery(this).addClass('open');
-        }
-        
+        }        
     });
 
 // Show more filter
@@ -248,6 +247,11 @@ jQuery(document).ready(function($) {
             jQuery(this).find('span').text(jQuery(this).attr('data-less'));
             jQuery(this).addClass('active');
         }
+    });
+
+// Lightbox
+    jQuery(document).on('click', '.lightbox_close', function(){
+        jQuery(this).parent().parent().removeClass('lightbox_show');
     });
 });
 

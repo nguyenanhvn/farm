@@ -210,6 +210,56 @@
         }
     }
 
+    .conn_mbutton{
+        background: $color;
+        color: #fff;
+        font-size: 14px;
+        line-height: 40px;
+        border-radius: 8px;
+        outline: none;
+        border: 0;
+        height: 40px;
+        font-weight: 500;
+        @include transition;
+        &:not(:disabled):hover{
+            background: $color-hover;
+        }
+        &:disabled{
+            cursor: not-allowed;
+            background: $slate;
+            color: #bcc3d2;
+        }
+        svg, span{
+            pointer-events: none;
+        }
+    }
+    .conn_gbutton{
+        background: #E3E6ED;
+        color: $color-text;
+        font-size: 14px;
+        line-height: 40px;
+        border-radius: 8px;
+        outline: none;
+        border: 0;
+        height: 40px;
+        font-weight: 500;
+        @include transition;
+        &:not(:disabled):hover{
+            background: #dce1ea;
+        }
+        &:disabled{
+            cursor: not-allowed;
+            background: $slate;
+            color: #bcc3d2;
+        }
+        svg, span{
+            pointer-events: none;
+        }
+        svg{
+            margin-right: 4px;
+        }
+    }
+
     .conn_relative{
         position: relative;
         z-index: 9;
