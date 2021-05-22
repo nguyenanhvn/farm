@@ -83,6 +83,11 @@ jQuery(document).ready(function($) {
         jQuery(this).toggleClass('active');
     });
 
+// Droplist User
+    jQuery(document).on('click', '.conn_logined', function(){
+        jQuery(this).closest('.box').find('.header-logined').toggleClass('open');
+    });
+
 // Tabs
     var tabInputs = document.querySelectorAll('.tabInput');
 
@@ -198,6 +203,9 @@ jQuery(document).ready(function($) {
         if(e && e.target && e.target.offsetParent && e.target.offsetParent.className.indexOf('control_dropdown') == -1){
             jQuery('.control_dropdown').removeClass('open');
         }
+        if(e && e.target && e.target.offsetParent && e.target.offsetParent.className.indexOf('header-logined') == -1 &&  e.target.className.indexOf('conn_logined') == -1){
+            jQuery('.header-logined').removeClass('open');
+        }
     });
 
 // Click Show Phone
@@ -263,6 +271,7 @@ function header() {
             jQuery('#header').addClass('active');
             jQuery('#scroll').addClass('scroll');
             jQuery('.content-flisting').addClass('active');
+            jQuery('.header-logined').removeClass('open');
         } else {
             if(scroll > 190) {
                 jQuery('.content-flisting').addClass('active');

@@ -72,6 +72,7 @@
  			}
  			.box{
  				grid-template-columns: 212px 1fr 212px;
+ 				position: relative;
  				.bottom_logo{
 		 			padding: 16px 0;
  					line-height: 40px;
@@ -159,6 +160,65 @@
  				}
  			}
  		}
+		.header-logined{
+		    position: absolute;
+		    top: calc(100% + 27px);
+		    right: 0;
+			box-shadow: 0 4px 8px rgba(#252A31, 0.16);
+			background: #fff;
+			border-radius: 4px;
+			padding: 4px 0;
+			width: 240px;
+			opacity: 0;
+			visibility: hidden;
+			&.open{
+				opacity: 1;
+				visibility: visible;
+			    top: calc(100% + 2px);
+			}
+			.logined_box{
+				.logined_top{
+					padding: 16px;
+					.conn_grid{
+						grid-template-columns: 40px 1fr;
+						grid-gap: 12px;							
+					}
+					.logined_info{
+						display: grid;
+					}
+					.logined_name{
+						font-weight: 500;
+						color: $color-text;
+						margin-top: 2px;
+					}
+					.logined_mail{
+						font-size: 12px;
+						line-height: 16px;
+						color: #4A5264;
+					}
+				}
+				.logined_actions{
+					padding-top: 4px;
+					border-top: 1px solid #E9ECF1;
+					.action{
+						padding: 12px 16px;
+						grid-template-columns: 16px 1fr;
+						grid-gap: 8px;
+						&:hover{
+							background: #E9F7F5;
+						}
+						span{
+							font-size: 14px;
+							line-height: 16px;
+							color: $color-text;
+						}
+						svg, span{
+							pointer-events: none;
+						}
+					}
+				}
+			}
+		}
  		.header-scroll{
  			position: fixed;
  			top: -60px;
@@ -174,6 +234,10 @@
  			}
  			.box{
  				grid-template-columns: 212px 1fr 212px;
+ 				position: relative;
+ 				.header-logined{
+ 					top: 52px;
+ 				}
  				.scroll_logo{
  					line-height: 40px;
  					grid-template-columns: 40px 1fr;
@@ -786,6 +850,54 @@
 					    top: 2px;
 		    		}
 		    	}
+
+				.menu_logined{
+					background: #F5F6F9;
+					border-radius: 4px;
+					padding: 4px 0;
+					.logined_box{
+						.logined_top{
+							padding: 16px;
+							.conn_grid{
+								grid-template-columns: 40px 1fr;
+								grid-gap: 12px;							
+							}
+							.logined_info{
+								display: grid;
+							}
+							.logined_name{
+								font-weight: 500;
+								color: $color-text;
+								margin-top: 2px;
+							}
+							.logined_mail{
+								font-size: 12px;
+								line-height: 16px;
+								color: #4A5264;
+							}
+						}
+						.logined_actions{
+							padding-top: 4px;
+							border-top: 1px solid #E9ECF1;
+							.action{
+								padding: 12px 16px;
+								grid-template-columns: 16px 1fr;
+								grid-gap: 8px;
+								&:hover{
+									background: #E9F7F5;
+								}
+								span{
+									font-size: 14px;
+									line-height: 16px;
+									color: $color-text;
+								}
+								svg, span{
+									pointer-events: none;
+								}
+							}
+						}
+					}
+				}
 		    }
 		    .menu_menus{
 		    	ul{

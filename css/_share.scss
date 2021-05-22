@@ -167,6 +167,20 @@
             bottom: 0;
             margin: auto;
         }
+        img{
+            pointer-events: none;
+        }
+    }
+
+    .conn_logined__avatar{
+        border: 1px solid #E9ECF1;
+        img{
+            display: block;
+        }
+    }
+
+    .conn_logined__default{
+        background: #E9F7F5;
     }
 
     .conn_sicon{
@@ -345,6 +359,12 @@
         text-transform: uppercase;
     }
 
+    .conn_nowrap{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
     .conn_p16{
         padding: 16px;
     }
@@ -440,19 +460,34 @@
     }
 
     .conn_navigation{
-        display: grid;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
         margin: 24px auto;
-        grid-template-columns: repeat(auto-fit, minmax(32px, 1fr));
-        width: 272px;
-        grid-gap: 8px;
         .navi{
+            display: inline-block;
             width: 32px;
+            height: 32px;
             line-height: 32px;
+            margin: 0 4px;
             text-align: center;
             position: relative;
             @include transition;
             color: $color-text;
             border-radius: 4px;
+            @media (max-width: 450px){
+                width: 24px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 12px;
+            }
             &:hover,
             &.navi_active{
                 background: $color;

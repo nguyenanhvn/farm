@@ -42,6 +42,9 @@
  			a:hover{
  				text-decoration: underline;
  			}
+ 			a ~ a{
+ 				text-decoration: underline !important;
+ 			}
  			svg{
  				pointer-events: none;
  				position: relative;
@@ -1242,8 +1245,6 @@
 	 				overflow: hidden;
 	 				img{
 	 					width: 100%;
-	 					height: 100%;
-	 					object-fit: cover;
 	 				}
 	 			}
 	 			.item_caption{
