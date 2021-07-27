@@ -821,10 +821,13 @@
 				}
 			}
 			.menu_top{
-			    max-height: calc(100vh - 208px - 56px);
+			    height: calc(100vh - 208px);
 			    overflow: auto;
+			    @media (max-width: 992px){
+				    height: calc(100vh - 208px - 60px);			    	
+			    }
 			    @media (max-width: 767px) and (min-width: 451px){
-			    	max-height: none;
+			    	height: auto;
 			    }
 			}
 		    .menu_bottom{

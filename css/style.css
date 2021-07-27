@@ -1828,12 +1828,17 @@ section {
   transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 #header .header-menu .menu_top {
-  max-height: calc(100vh - 208px - 56px);
+  height: calc(100vh - 208px);
   overflow: auto;
+}
+@media (max-width: 992px) {
+  #header .header-menu .menu_top {
+    height: calc(100vh - 208px - 60px);
+  }
 }
 @media (max-width: 767px) and (min-width: 451px) {
   #header .header-menu .menu_top {
-    max-height: none;
+    height: auto;
   }
 }
 #header .header-menu .menu_bottom {
@@ -3937,20 +3942,9 @@ section.content-blisting .box__wrap .box_text {
   margin-top: 4px;
 }
 section.content-blisting .box__wrap .box_items {
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(1, minmax(100px, 1fr));
+  grid-gap: 15px;
   margin-top: 24px;
-}
-@media (max-width: 1200px) {
-  section.content-blisting .box__wrap .box_items {
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
-  }
-}
-@media (max-width: 450px) {
-  section.content-blisting .box__wrap .box_items {
-    grid-template-columns: 1fr;
-    display: block;
-  }
 }
 section.content-blisting .box__wrap .box_items .item {
   box-shadow: 0px 0px 2px #292C3229;
@@ -3960,10 +3954,17 @@ section.content-blisting .box__wrap .box_items .item {
   position: relative;
   transition: all 0.3s ease-out 0.2s;
   -webkit-transition: all 0.3s ease-out 0.2s;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+@media (max-width: 767px) {
+  section.content-blisting .box__wrap .box_items .item {
+    grid-template-columns: 160px 1fr;
+  }
 }
 @media (max-width: 450px) {
   section.content-blisting .box__wrap .box_items .item {
-    margin-top: 12px;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
   }
 }
 section.content-blisting .box__wrap .box_items .item:hover {
@@ -3972,6 +3973,13 @@ section.content-blisting .box__wrap .box_items .item:hover {
 section.content-blisting .box__wrap .box_items .item:hover .nav__prev,
 section.content-blisting .box__wrap .box_items .item:hover .nav__next {
   opacity: 1 !important;
+}
+@media (min-width: 451px) {
+  section.content-blisting .box__wrap .box_items .item .conn_sicon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 }
 section.content-blisting .box__wrap .box_items .item .item_line {
   height: 1px;
@@ -4106,10 +4114,16 @@ section.content-blisting .box__wrap .box_items .item .item_galleries .item_slide
   right: 8px;
 }
 section.content-blisting .box__wrap .box_items .item .item_caption {
-  margin-top: 12px;
+  padding-left: 12px;
+}
+@media (max-width: 450px) {
+  section.content-blisting .box__wrap .box_items .item .item_caption {
+    padding: 20px 0 0;
+  }
 }
 section.content-blisting .box__wrap .box_items .item .item_caption .item_name {
   font-weight: 500;
+  width: calc(100% - 50px);
 }
 section.content-blisting .box__wrap .box_items .item .item_caption .item_name a {
   color: #007066;
@@ -4125,6 +4139,11 @@ section.content-blisting .box__wrap .box_items .item .item_caption .item_locatio
 section.content-blisting .box__wrap .box_items .item .item_caption .item_location svg {
   position: relative;
   top: -2px;
+}
+@media (min-width: 451px) {
+  section.content-blisting .box__wrap .box_items .item .item_info + .item_line {
+    display: none;
+  }
 }
 section.content-blisting .box__wrap .box_items .item .item_info ul li {
   grid-template-columns: 16px 1fr;
@@ -4144,27 +4163,6 @@ section.content-blisting .box__wrap .box_items .item .item_bottom .item_price st
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-}
-section.content-blisting .box__wrap .box_items .item .item_bottom .item_like {
-  width: 32px;
-  height: 32px;
-  background: #DCE1EA;
-  border-radius: 8px;
-  cursor: pointer;
-  pointer-events: auto;
-}
-section.content-blisting .box__wrap .box_items .item .item_bottom .item_like.active {
-  background: #00C2AF;
-}
-section.content-blisting .box__wrap .box_items .item .item_bottom .item_like.active svg path {
-  fill: #fff;
-}
-section.content-blisting .box__wrap .box_items .item .item_bottom .item_like svg {
-  pointer-events: none;
-}
-section.content-blisting .box__wrap .box_items .item .item_bottom .item_like svg path {
-  transition: all 0.3s ease-out 0.2s;
-  -webkit-transition: all 0.3s ease-out 0.2s;
 }
 section.content-blisting .box__wrap .box_more {
   display: table;

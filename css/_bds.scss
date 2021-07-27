@@ -510,16 +510,9 @@
  				margin-top: 4px;
  			}
 	 		.box_items{
-	 			grid-template-columns: repeat(3, minmax(100px, 1fr));
-	 			grid-gap: 24px;
+	 			grid-template-columns: repeat(1, minmax(100px, 1fr));
+	 			grid-gap: 15px;
 	 			margin-top: 24px;
-	 			@media (max-width: 1200px){
-		 			grid-template-columns: repeat(2, minmax(100px, 1fr)); 				
-	 			}
-	 			@media (max-width: 450px){
-	 				grid-template-columns: 1fr; 	
-					display: block;		
-	 			}
 	 			.item{
 	 				box-shadow: 0px 0px 2px #292C3229;
 					border-radius: 4px;
@@ -527,14 +520,26 @@
 					padding: 12px;
 					position: relative;
 					@include transition;
+					display: grid;
+					grid-template-columns: 250px 1fr;
+		 			@media (max-width: 767px){
+						grid-template-columns: 160px 1fr;
+		 			}	 			
 		 			@media (max-width: 450px){
-	 					margin-top: 12px;
+			 			grid-template-columns: repeat(1, minmax(100px, 1fr));
 		 			}	 			
 					&:hover{
 						box-shadow: 0px 1px 4px #292C3229;						
 						.nav__prev,
 						.nav__next{
 							opacity: 1 !important;
+						}
+					}
+					.conn_sicon{
+						@media (min-width: 451px){							
+							position: absolute;
+							top: 10px;
+							right: 10px;
 						}
 					}
 					.item_line{
@@ -662,9 +667,13 @@
 						}
 					}
 					.item_caption{
-						margin-top: 12px;
+						padding-left: 12px;
+						@media (max-width: 450px){
+							padding: 20px 0 0;
+						}
 						.item_name{
 							font-weight: 500;
+							width: calc(100% - 50px);
 							a{
 								color: $color-dark;
 								&:hover{
@@ -683,6 +692,11 @@
 						}
 					}
 					.item_info{
+						@media (min-width: 451px){							
+							+ .item_line{
+								display: none;
+							}
+						}
 						ul{
 							li{
 								grid-template-columns: 16px 1fr;
@@ -693,44 +707,24 @@
 							}
 						}
 					}
-				.item_bottom{
-					justify-content: space-between;
-					.item_price{
-						line-height: 32px;
-						strong{
-							color: $color;
-							font-size: 16px;
-							line-height: 24px;
-							font-weight: 500;
-						}
-					}
-					.item_like{
-						width: 32px;
-						height: 32px;
-						background: #DCE1EA;
-						border-radius: 8px;
-						cursor: pointer;
-						pointer-events: auto;
-						&.active{
-							background: $color;
-							svg path{
-								fill: #fff;
+					.item_bottom{
+						justify-content: space-between;
+						.item_price{
+							line-height: 32px;
+							strong{
+								color: $color;
+								font-size: 16px;
+								line-height: 24px;
+								font-weight: 500;
 							}
 						}
-						svg{
-							pointer-events: none;
-						}
-						svg path{
-							@include transition;
-						}
 					}
-				}
- 			}
- 		}
- 		.box_more{
- 			display: table;
- 			margin: 32px auto auto;	
- 		}
+	 			}
+	 		}
+	 		.box_more{
+	 			display: table;
+	 			margin: 32px auto auto;	
+	 		}
  		}
  	}
 
